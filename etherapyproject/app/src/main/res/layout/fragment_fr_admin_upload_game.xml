@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
     tools:context=".view.fragment_admin.FrAdminUploadGame">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Upload Quis"
+        android:gravity="center"
+        >
 
-</FrameLayout>
+    </TextView>
+    <TextView
+        android:background="@drawable/ic_baseline_quiz_24"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp">
+
+    </TextView>
+    <Button
+        android:text="Upload Quiz"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9F3434">
+
+    </Button>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="#F3EDED"
+        android:text="Lihat Jawaban User"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0C0B0B">
+
+    </TextView>
+
+
+    <TextView
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="#F3EDED"
+        android:text="Lihat Rete User"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0C0B0B">
+
+    </TextView>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="#F4EFEF"
+        android:text="Lihat List Quiz"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#6A6767">
+
+    </TextView>
+
+
+
+
+</LinearLayout>

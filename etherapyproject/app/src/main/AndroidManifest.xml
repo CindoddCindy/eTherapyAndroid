@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Etherapy">
-        <activity android:name=".view.SelectLoginActivity"></activity>
+        <activity android:name=".view.AdminUploadMuslim"></activity>
+        <activity android:name=".view.AdminUploadKristen" />
+        <activity android:name=".view.SelectLoginActivity" />
         <activity android:name=".view.MotivasiMuslim" />
         <activity android:name=".view.MotivasiKristen" />
         <activity android:name=".view.BottomNavUser" />
