@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.fragment_user.FrUserMotivasi">
+    tools:context=".view.UserMuslimMotivasi">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,37 +15,26 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/motivation">
+            android:src="@drawable/ac_muslim">
 
         </ImageView>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="3">
 
-        <Button
-            android:text="Motivasi Muslim"
-            android:layout_margin="10dp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#9F3434">
+            android:layout_height="wrap_content">
 
-        </Button>
-
-        <Button
-            android:text="Motivasi Kristen"
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#9F3434">
-
-        </Button>
+        </androidx.recyclerview.widget.RecyclerView>
 
     </LinearLayout>
+
+
+
 </LinearLayout>
