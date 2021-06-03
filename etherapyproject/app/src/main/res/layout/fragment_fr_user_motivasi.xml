@@ -7,16 +7,12 @@
     tools:context=".view.fragment_user.FrUserMotivasi">
 
     <LinearLayout
+        android:background="@drawable/motivationss"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_weight="1">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/motivation">
 
-        </ImageView>
 
     </LinearLayout>
 
