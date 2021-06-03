@@ -1,5 +1,6 @@
 package com.cindodcindy.etherapy.view.fragment_user;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.UserKristenMotivasi;
+import com.cindodcindy.etherapy.view.UserMuslimMotivasi;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +29,8 @@ public class FrUserMotivasi extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private Button button_muslim, button_kristen;
 
     public FrUserMotivasi() {
         // Required empty public constructor
@@ -61,6 +67,31 @@ public class FrUserMotivasi extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fr_user_motivasi, container, false);
+        View view =inflater.inflate(R.layout.fragment_fr_user_motivasi, container, false);
+        button_muslim=view.findViewById(R.id.btn_user_motivasi_muslim);
+        button_kristen=view.findViewById(R.id.btn_user_motivasi_kristen);
+
+        button_muslim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getActivity(), UserMuslimMotivasi.class);
+                startActivity(intent);
+
+            }
+        });
+
+        button_kristen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getActivity(), UserKristenMotivasi.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        return view;
     }
 }

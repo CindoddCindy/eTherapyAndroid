@@ -27,6 +27,7 @@
 
     </TextView>
     <Button
+        android:id="@+id/btn_upload_motivasi_muslim"
         android:text="Motivasi Muslim"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
@@ -36,6 +37,7 @@
     </Button>
 
     <Button
+        android:id="@+id/btn_upload_motivasi_kristen"
         android:text="Motivasi Kristen"
         android:layout_margin="10dp"
         android:layout_width="match_parent"

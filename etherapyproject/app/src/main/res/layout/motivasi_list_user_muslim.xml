@@ -76,6 +76,7 @@
 
 
                                 <TextView
+                                    android:id="@+id/tv_user_muslim_motivasi_tittle"
                                     android:layout_marginRight="5dp"
                                     android:layout_marginLeft="5dp"
                                     android:layout_width="match_parent"
