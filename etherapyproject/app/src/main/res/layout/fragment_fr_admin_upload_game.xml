@@ -19,13 +19,13 @@
         >
 
     </TextView>
-    <TextView
-        android:background="@drawable/ic_baseline_quiz_24"
+    <EditText
+        android:background="#EDEBD5"
         android:layout_margin="10dp"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp">
 
-    </TextView>
+    </EditText>
     <Button
         android:text="Upload Quiz"
         android:layout_margin="10dp"

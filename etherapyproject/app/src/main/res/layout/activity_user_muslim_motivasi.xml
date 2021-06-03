@@ -8,16 +8,26 @@
     tools:context=".view.UserMuslimMotivasi">
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_weight="1">
 
         <ImageView
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ac_muslim">
 
         </ImageView>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ac_muslim">
+
+        </ImageView>
+
 
     </LinearLayout>
 
