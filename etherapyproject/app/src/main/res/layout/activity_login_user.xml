@@ -48,6 +48,7 @@
     </EditText>
 
     <Button
+        android:id="@+id/btn_login_user"
         android:text="Login"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
