@@ -1,4 +1,4 @@
-package com.cindodcindy.etherapy.view.adapter;
+package com.cindodcindy.etherapy.view.adapter_admin;
 
 public class AdminMuslimAdapter {
 }
