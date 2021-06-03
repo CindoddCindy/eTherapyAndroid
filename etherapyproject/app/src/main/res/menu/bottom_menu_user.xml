@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/music_admin"
+        android:icon="@drawable/ic_baseline_music_note_24"
+        android:title=" Music Therapy" />
+
+    <item android:id="@+id/motivation_admin"
+        android:icon="@drawable/ic_baseline_emoji_emotions_24"
+        android:title="Kata Kata Motivasi" />
+
+    <item android:id="@+id/quiz_admin"
+        android:icon="@drawable/ic_baseline_quiz_24"
+        android:title="Quiz" />
+</menu>
