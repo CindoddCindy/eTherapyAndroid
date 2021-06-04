@@ -10,6 +10,14 @@ public class MusicClass {
 
     String jawabA, jawabB, jawabC, jawabD;
 
+    public MusicClass(String title,  String jawabA, String jawabB, String jawabC, String jawabD) {
+        this.title = title;
+        this.jawabA = jawabA;
+        this.jawabB = jawabB;
+        this.jawabC = jawabC;
+        this.jawabD = jawabD;
+    }
+
     public int getScore_tiga() {
         return score_tiga;
     }

@@ -88,16 +88,16 @@ public class FrUserGame extends Fragment {
 
 
         modelSementaraList = new ArrayList<>();
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
+        modelSementaraList.add(new MusicClass("Siapa Presiden Indonesia saat ini", "jokowidodo","megawati","sby","susi"));
+        modelSementaraList.add(new MusicClass("Apa Warna Semangka","Merah","biru","putih","kuning"));
+        modelSementaraList.add(new MusicClass("Indonesia Merdeka pada", "17 Agustus","2 Mey","28 Oktober","17 Febuari"));
+        modelSementaraList.add(new MusicClass("Waktu Di Indonesia Di bagi menjadi", "Tiga","dua","satu","empat"));
+
+        modelSementaraList.add(new MusicClass("Covid adalah", "bakteri","zat","unsur","virus"));
+        modelSementaraList.add(new MusicClass("Ibu Kota indonesia adalah","Bali","Bandung","Ambon","Jakarta"));
+        modelSementaraList.add(new MusicClass("Beda waktu WIB dan WIT adalah", "5","7","10","2"));
+        modelSementaraList.add(new MusicClass("Matahari Terbit dari", "Tengah","Selatan","kiri","timur"));
+
 
         userAdapterGame= new UserAdapterGame(getActivity(),modelSementaraList);
         recyclerView.setAdapter(userAdapterGame);
