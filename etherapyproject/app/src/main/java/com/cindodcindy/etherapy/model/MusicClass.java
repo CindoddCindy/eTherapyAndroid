@@ -2,8 +2,8 @@ package com.cindodcindy.etherapy.model;
 
 public class MusicClass {
     String title;
-    int score=10;
-    int score_dua=10;
+    int score=100;
+    int score_dua=100;
 
     int score_tiga=0;
     int score_empat=0;
