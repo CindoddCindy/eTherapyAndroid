@@ -160,11 +160,7 @@
 
 
             </LinearLayout>
-            <androidx.appcompat.widget.AppCompatRatingBar
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-            </androidx.appcompat.widget.AppCompatRatingBar>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
