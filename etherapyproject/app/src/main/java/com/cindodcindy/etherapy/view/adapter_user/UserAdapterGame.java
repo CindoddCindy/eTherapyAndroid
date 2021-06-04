@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.model.MusicClass;
 import com.cindodcindy.etherapy.view.LihatScore;
+import com.cindodcindy.etherapy.view.ScoreEror;
 
 import java.util.List;
 
@@ -68,7 +69,7 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
                         Bundle bundles = new Bundle();
                         bundles.putString("score_b",musicClass.getScore_tiga());
 
-                        Intent intents = new Intent(context, LihatScore.class);
+                        Intent intents = new Intent(context, ScoreEror.class);
                         intents.putExtras(bundles);
                         context.startActivity(intents);
 
@@ -87,7 +88,7 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
                         Bundle bundle = new Bundle();
                         bundle.putString("score_c",musicClass.getScore_empat());
 
-                        Intent intent = new Intent(context, LihatScore.class);
+                        Intent intent = new Intent(context, ScoreEror.class);
                         intent.putExtras(bundle);
                         context.startActivity(intent);
 
