@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,7 +20,7 @@ public class AdminGameAdapter extends RecyclerView.Adapter<AdminGameAdapter.Game
 
     public List<MusicClass> modelSementaras;
 
-    public UserAdapterMusic(Context context, List<MusicClass> modelSementaras){
+    public AdminGameAdapter(Context context, List<MusicClass> modelSementaras){
         this.context=context;
         this.modelSementaras=modelSementaras;
     }
@@ -27,29 +28,32 @@ public class AdminGameAdapter extends RecyclerView.Adapter<AdminGameAdapter.Game
     @Override
     public GameAdapterChild onCreateViewHolder( ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View views= layoutInflater.inflate(R.layout.music_adapter_list_user, parent, false);
-        UserAdapterMusic.MusicChild sellerDoneChild=new UserAdapterMusic.MusicChild(views);
+        View views= layoutInflater.inflate(R.layout.admin_lihat_jwaban_quiz, parent, false);
+        GameAdapterChild sellerDoneChild=new GameAdapterChild(views);
 
         return sellerDoneChild;
-        return null;
+
     }
 
     @Override
     public void onBindViewHolder( AdminGameAdapter.GameAdapterChild holder, int position) {
-        holder.textView_music_title.setText(modelSementaras.get(position).getTitle());
+        holder.textView_admin_lihat_isi_quis.setText(modelSementaras.get(position).getTitle());
 
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return modelSementaras.size();
     }
 
     public class GameAdapterChild extends RecyclerView.ViewHolder{
 
+        private TextView textView_admin_lihat_isi_quis;
+
         public GameAdapterChild( View itemView) {
             super(itemView);
+            textView_admin_lihat_isi_quis=itemView.findViewById(R.id.tv_admin_lihat_quiz);
         }
     }
 }
