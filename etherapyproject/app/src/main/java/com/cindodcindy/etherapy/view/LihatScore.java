@@ -26,7 +26,9 @@ public class LihatScore extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 cekHasilScore();
+                textView_hasil_quiz.setText("Hore Nilai Kamu 100");
             }
+
         });
 
 
@@ -41,8 +43,8 @@ public class LihatScore extends AppCompatActivity {
             Bundle bundle = getIntent().getExtras();
             //textView_jenis_makanan.setText(bundle.getString("jm"));
 
-            textView_hasil_quiz.setText(bundle.getInt("score_a",100));
-            textView_hasil_quiz.setText(bundle.getInt("score_d", 100));
+            textView_hasil_quiz.setText(bundle.getString("score_a","Nilai Kamu 100"));
+            textView_hasil_quiz.setText(bundle.getString("score_d", "Nilai Kamu 100"));
 
         }
     }

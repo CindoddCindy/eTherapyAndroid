@@ -8,11 +8,11 @@
     tools:context=".view.fragment_user.FrUserGame">
 
     <LinearLayout
+        android:orientation="horizontal"
         android:background="@drawable/ad_quiz"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="top"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
 
 
 
@@ -22,7 +22,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3">
+        android:layout_weight="1">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_user_game"

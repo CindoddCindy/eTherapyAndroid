@@ -2,11 +2,11 @@ package com.cindodcindy.etherapy.model;
 
 public class MusicClass {
     String title;
-    int score;
-    int score_dua;
+    String score;
+    String score_dua;
 
-    int score_tiga;
-    int score_empat;
+    String score_tiga;
+    String score_empat;
 
     String jawabA, jawabB, jawabC, jawabD;
 
@@ -18,44 +18,9 @@ public class MusicClass {
         this.jawabD = jawabD;
     }
 
-    public int getScore_tiga() {
-        return score_tiga;
-    }
 
-    public void setScore_tiga(int score_tiga) {
-        this.score_tiga = score_tiga;
-    }
-
-    public int getScore_empat() {
-        return score_empat;
-    }
-
-    public void setScore_empat(int score_empat) {
-        this.score_empat = score_empat;
-    }
-
-    public int getScore() {
-        return score;
-    }
-
-    public MusicClass(int score, int score_dua) {
-        this.score = score;
-        this.score_dua=score_dua;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
 
     public MusicClass() {
-    }
-
-    public int getScore_dua() {
-        return score_dua;
-    }
-
-    public void setScore_dua(int score_dua) {
-        this.score_dua = score_dua;
     }
 
     public MusicClass(String jawabA, String jawabB, String jawabC, String jawabD){
@@ -65,6 +30,21 @@ public class MusicClass {
         this.jawabD=jawabD;
     }
 
+    public String getScore_tiga() {
+        return score_tiga;
+    }
+
+    public void setScore_tiga(String score_tiga) {
+        this.score_tiga = score_tiga;
+    }
+
+    public String getScore_empat() {
+        return score_empat;
+    }
+
+    public void setScore_empat(String score_empat) {
+        this.score_empat = score_empat;
+    }
 
     public String getJawabA() {
         return jawabA;
@@ -108,5 +88,21 @@ public class MusicClass {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
+        this.score = score;
+    }
+
+    public String getScore_dua() {
+        return score_dua;
+    }
+
+    public void setScore_dua(String score_dua) {
+        this.score_dua = score_dua;
     }
 }

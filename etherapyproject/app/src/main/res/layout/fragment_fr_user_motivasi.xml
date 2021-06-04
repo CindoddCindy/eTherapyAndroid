@@ -10,7 +10,7 @@
         android:background="@drawable/motivationss"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_weight="1">
+        android:layout_weight="3">
 
 
 
@@ -22,7 +22,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3">
+        android:layout_weight="1">
 
         <Button
             android:id="@+id/btn_user_motivasi_muslim"

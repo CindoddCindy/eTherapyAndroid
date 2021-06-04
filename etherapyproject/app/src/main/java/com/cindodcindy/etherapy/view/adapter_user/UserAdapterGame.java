@@ -56,7 +56,7 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
                     case R.id.rb_a:
 
                         Bundle bundle = new Bundle();
-                        bundle.putInt("score_a",musicClass.getScore());
+                        bundle.putString("score_a",musicClass.getScore());
 
                         Intent intent = new Intent(context, LihatScore.class);
                         intent.putExtras(bundle);
@@ -66,7 +66,7 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
                     case R.id.rb_b:
 
                         Bundle bundles = new Bundle();
-                        bundles.putInt("score_b",musicClass.getScore_tiga());
+                        bundles.putString("score_b",musicClass.getScore_tiga());
 
                         Intent intents = new Intent(context, LihatScore.class);
                         intents.putExtras(bundles);
@@ -85,7 +85,7 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
                 switch (checkedId){
                     case R.id.rb_c:
                         Bundle bundle = new Bundle();
-                        bundle.putInt("score_c",musicClass.getScore_dua());
+                        bundle.putString("score_c",musicClass.getScore_empat());
 
                         Intent intent = new Intent(context, LihatScore.class);
                         intent.putExtras(bundle);
@@ -94,7 +94,7 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
                         break;
                     case R.id.rb_d:
                         Bundle bundlle = new Bundle();
-                        bundlle.putInt("score_d",musicClass.getScore_empat());
+                        bundlle.putString("score_d",musicClass.getScore_empat());
 
                         Intent inntent = new Intent(context, LihatScore.class);
                         inntent.putExtras(bundlle);
