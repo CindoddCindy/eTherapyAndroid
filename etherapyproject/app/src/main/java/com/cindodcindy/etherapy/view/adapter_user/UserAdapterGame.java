@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,7 +20,7 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
 
     public List<MusicClass> modelSementaras;
 
-    public UserAdapterMusic(Context context, List<MusicClass> modelSementaras){
+    public UserAdapterGame(Context context, List<MusicClass> modelSementaras){
         this.context=context;
         this.modelSementaras=modelSementaras;
     }
@@ -27,29 +28,31 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
     @Override
     public UserAdapterChild onCreateViewHolder( ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View views= layoutInflater.inflate(R.layout.music_adapter_list_user, parent, false);
-        UserAdapterMusic.MusicChild sellerDoneChild=new UserAdapterMusic.MusicChild(views);
+        View views= layoutInflater.inflate(R.layout.quiz_user_list, parent, false);
+        UserAdapterChild sellerDoneChild=new UserAdapterChild(views);
 
         return sellerDoneChild;
-        return null;
+
     }
 
     @Override
     public void onBindViewHolder( UserAdapterGame.UserAdapterChild holder, int position) {
-        holder.textView_music_title.setText(modelSementaras.get(position).getTitle());
+        holder.textView_user_quiz.setText(modelSementaras.get(position).getTitle());
 
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return modelSementaras.size();
     }
 
     public class UserAdapterChild extends RecyclerView.ViewHolder{
+        private TextView textView_user_quiz;
 
         public UserAdapterChild(@NonNull  View itemView) {
             super(itemView);
+            textView_user_quiz=itemView.findViewById(R.id.tv_user_quiz);
         }
     }
 }
