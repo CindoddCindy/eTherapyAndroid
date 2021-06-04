@@ -12,7 +12,7 @@ import com.cindodcindy.etherapy.R;
 public class LihatScore extends AppCompatActivity {
 
     private TextView textView_hasil_quiz;
-    private Button cek_score_quiz;
+   // private Button cek_score_quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,9 @@ public class LihatScore extends AppCompatActivity {
         setContentView(R.layout.activity_lihat_score);
 
         textView_hasil_quiz=findViewById(R.id.tv_hasil_quiz);
+
+        cekHasilScore();
+        /*
         cek_score_quiz=findViewById(R.id.btn_cek_hasil_quiz);
 
         cek_score_quiz.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +34,8 @@ public class LihatScore extends AppCompatActivity {
 
         });
 
+
+         */
 
     }
 

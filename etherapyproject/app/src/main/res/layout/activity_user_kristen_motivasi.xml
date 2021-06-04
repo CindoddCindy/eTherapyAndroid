@@ -8,17 +8,12 @@
     tools:context=".view.UserKristenMotivasi">
 
     <LinearLayout
+        android:background="@drawable/a_christian"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/a_christian">
-
-        </ImageView>
 
     </LinearLayout>
 

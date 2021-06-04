@@ -8,7 +8,7 @@
     tools:context=".view.fragment_user.FrUserGame">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:background="@drawable/ad_quiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

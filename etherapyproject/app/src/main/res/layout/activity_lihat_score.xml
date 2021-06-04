@@ -21,6 +21,8 @@
 
     </TextView>
     <TextView
+        android:gravity="center"
+        android:textColor="#000"
         android:id="@+id/tv_hasil_quiz"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
