@@ -56,18 +56,6 @@
 
     </TextView>
 
-    <TextView
-        android:id="@+id/tv_btn_lihat_music_list"
-        android:gravity="center"
-        android:textSize="15dp"
-        android:textColor="#F4EFEF"
-        android:text="Lihat List Music"
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#6A6767">
-
-    </TextView>
 
 
 

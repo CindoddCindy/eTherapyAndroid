@@ -1,5 +1,6 @@
 package com.cindodcindy.etherapy.view.fragment_admin;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.AdminUploadKristen;
+import com.cindodcindy.etherapy.view.AdminUploadMuslim;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,6 +33,8 @@ public class FrAdminUploadMotivasi extends Fragment {
     public FrAdminUploadMotivasi() {
         // Required empty public constructor
     }
+
+    private Button button_uplaod_kristen, button_upload_muslim;
 
     /**
      * Use this factory method to create a new instance of
@@ -61,6 +67,27 @@ public class FrAdminUploadMotivasi extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fr_admin_upload_motivasi, container, false);
+        View view = inflater.inflate(R.layout.fragment_fr_admin_upload_motivasi, container, false);
+
+        button_uplaod_kristen=view.findViewById(R.id.btn_upload_motivasi_kristen);
+        button_upload_muslim=view.findViewById(R.id.btn_upload_motivasi_muslim);
+
+        button_uplaod_kristen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(getActivity(), AdminUploadKristen.class);
+                startActivity(intent);
+            }
+        });
+
+         button_upload_muslim.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(getActivity(), AdminUploadMuslim.class);
+                 startActivity(intent);
+             }
+         });
+
+        return  view;
     }
 }

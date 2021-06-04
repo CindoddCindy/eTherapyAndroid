@@ -1,5 +1,6 @@
 package com.cindodcindy.etherapy.view.fragment_admin;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.seerate.AdminLihatRateMusic;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +28,8 @@ public class FrAdminUploadMusic extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private TextView textView_admin_lihat_music_rate;
 
     public FrAdminUploadMusic() {
         // Required empty public constructor
@@ -61,6 +66,18 @@ public class FrAdminUploadMusic extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fr_admin_upload_music, container, false);
+         View view= inflater.inflate(R.layout.fragment_fr_admin_upload_music, container, false);
+
+         textView_admin_lihat_music_rate=view.findViewById(R.id.tv_btn_lihat_rate_music);
+
+         textView_admin_lihat_music_rate.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(getActivity(), AdminLihatRateMusic.class);
+                 startActivity(intent);
+             }
+         });
+
+         return view;
     }
 }

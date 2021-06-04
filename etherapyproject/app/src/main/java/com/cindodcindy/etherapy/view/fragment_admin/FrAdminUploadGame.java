@@ -1,5 +1,6 @@
 package com.cindodcindy.etherapy.view.fragment_admin;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.seerate.AdminLihatJwabanQuiz;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,6 +32,8 @@ public class FrAdminUploadGame extends Fragment {
     public FrAdminUploadGame() {
         // Required empty public constructor
     }
+
+    private TextView textView_btn_admin_lihat_quiz;
 
     /**
      * Use this factory method to create a new instance of
@@ -61,6 +66,18 @@ public class FrAdminUploadGame extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fr_admin_upload_game, container, false);
+         View view =inflater.inflate(R.layout.fragment_fr_admin_upload_game, container, false);
+
+         textView_btn_admin_lihat_quiz=view.findViewById(R.id.tv_btn_admin_lihat_quiz);
+
+         textView_btn_admin_lihat_quiz.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent =new Intent(getActivity(), AdminLihatJwabanQuiz.class);
+                 startActivity(intent);
+             }
+         });
+
+         return  view;
     }
 }
