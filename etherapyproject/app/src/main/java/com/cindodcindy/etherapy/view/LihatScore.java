@@ -41,8 +41,8 @@ public class LihatScore extends AppCompatActivity {
             Bundle bundle = getIntent().getExtras();
             //textView_jenis_makanan.setText(bundle.getString("jm"));
 
-            textView_hasil_quiz.setText(bundle.getInt("score_a"));
-            textView_hasil_quiz.setText(bundle.getInt("score_d"));
+            textView_hasil_quiz.setText(bundle.getInt("score_a",100));
+            textView_hasil_quiz.setText(bundle.getInt("score_d", 100));
 
         }
     }
