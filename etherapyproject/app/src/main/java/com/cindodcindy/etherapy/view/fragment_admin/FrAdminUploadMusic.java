@@ -1,6 +1,7 @@
 package com.cindodcindy.etherapy.view.fragment_admin;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,10 +9,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.view.seerate.AdminLihatRateMusic;
+
+import static android.app.Activity.RESULT_OK;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -30,6 +34,8 @@ public class FrAdminUploadMusic extends Fragment {
     private String mParam2;
 
     private TextView textView_admin_lihat_music_rate;
+    private MediaPlayer mediaPlayer_uplaod_media_plyaer;
+    private Button button_pilih_file, button_upload_file;
 
     public FrAdminUploadMusic() {
         // Required empty public constructor
@@ -68,16 +74,10 @@ public class FrAdminUploadMusic extends Fragment {
         // Inflate the layout for this fragment
          View view= inflater.inflate(R.layout.fragment_fr_admin_upload_music, container, false);
 
-         textView_admin_lihat_music_rate=view.findViewById(R.id.tv_btn_lihat_rate_music);
 
-         textView_admin_lihat_music_rate.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Intent intent = new Intent(getActivity(), AdminLihatRateMusic.class);
-                 startActivity(intent);
-             }
-         });
 
          return view;
     }
+
+
 }

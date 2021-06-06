@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Etherapy">
-        <activity android:name=".view.ScoreEror"></activity>
+        <activity android:name=".view.UploadMusicActivity"></activity>
+        <activity android:name=".view.ScoreEror" />
         <activity android:name=".view.LihatScore" />
         <activity android:name=".view.seerate.AdminLihatJwabanQuiz" />
         <activity android:name=".view.seerate.AdminLihatRateMusic" />
