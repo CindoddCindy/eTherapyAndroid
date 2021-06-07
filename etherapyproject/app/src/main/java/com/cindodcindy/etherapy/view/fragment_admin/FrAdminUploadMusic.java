@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.ShowListMpTri;
 import com.cindodcindy.etherapy.view.seerate.AdminLihatRateMusic;
 
 import static android.app.Activity.RESULT_OK;
@@ -73,7 +74,14 @@ public class FrAdminUploadMusic extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
          View view= inflater.inflate(R.layout.fragment_fr_admin_upload_music, container, false);
-
+        button_pilih_file=view.findViewById(R.id.btn_pilih_file);
+        button_pilih_file.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ShowListMpTri.class);
+                startActivity(intent);
+            }
+        });
 
 
          return view;
