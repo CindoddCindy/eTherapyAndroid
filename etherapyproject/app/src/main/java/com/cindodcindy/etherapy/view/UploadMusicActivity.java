@@ -20,6 +20,12 @@ import android.widget.Toast;
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.view.seerate.AdminLihatRateMusic;
 
+import java.io.File;
+
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+
 public class UploadMusicActivity extends AppCompatActivity {
 
     private TextView textView_admin_lihat_music_rate;
@@ -28,7 +34,7 @@ public class UploadMusicActivity extends AppCompatActivity {
 
     Button btnUpload, btnMulUpload, btnPickImage, btnPickVideo;
     String mediaPath, mediaPath1;
-    ImageView imgView;
+    //ImageView imgView;
     String[] mediaColumns = {MediaStore.Video.Media._ID};
     ProgressDialog progressDialog;
     TextView str1, str2;
@@ -81,7 +87,7 @@ public class UploadMusicActivity extends AppCompatActivity {
     }
 
 
-
+/*
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -101,7 +107,7 @@ public class UploadMusicActivity extends AppCompatActivity {
                 mediaPath = cursor.getString(columnIndex);
                 str1.setText(mediaPath);
                 // Set the Image in ImageView for Previewing the Media
-                imgView.setImageBitmap(BitmapFactory.decodeFile(mediaPath));
+               // imgView.setImageBitmap(BitmapFactory.decodeFile(mediaPath));
                 cursor.close();
 
             } // When an Video is picked
@@ -157,7 +163,9 @@ public class UploadMusicActivity extends AppCompatActivity {
         File file = new File(mediaPath);
 
         // Parsing any Media type file
-        RequestBody requestBody = RequestBody.create(MediaType.parse("*/*"), file);
+
+    /*
+
         MultipartBody.Part fileToUpload = MultipartBody.Part.createFormData("file", file.getName(), requestBody);
         RequestBody filename = RequestBody.create(MediaType.parse("text/plain"), file.getName());
 
@@ -186,4 +194,6 @@ public class UploadMusicActivity extends AppCompatActivity {
             }
         });
     }
+
+     */
 }
