@@ -20,14 +20,68 @@
         >
 
     </TextView>
-    <EditText
-        android:background="#F3EFCB"
-        android:layout_margin="10dp"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Tittle">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edit_text_admin_upload_title_muslim"
+        android:background="#F3EFCB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </EditText>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Description">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edit_text_admin_upload_description_muslin"
+        android:background="#F3EFCB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+    </EditText>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Content">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edit_text_admin_upload_content_muslin"
+        android:background="#F3EFCB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
 
     </EditText>
     <Button
+        android:id="@+id/btn_upload_motivation_muslim"
         android:text="Post Motivasi"
         android:layout_margin="10dp"
         android:layout_width="match_parent"

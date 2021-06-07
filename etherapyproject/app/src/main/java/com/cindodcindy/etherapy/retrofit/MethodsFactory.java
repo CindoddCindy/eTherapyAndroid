@@ -1,7 +1,9 @@
 package com.cindodcindy.etherapy.retrofit;
 
 import com.cindodcindy.etherapy.model.get_mot_kris.GetMotivasiKristen;
+import com.cindodcindy.etherapy.model.get_mot_mus.GetMotivasiMuslim;
 import com.cindodcindy.etherapy.model.post_mot_kris.PostMotivasiKristen;
+import com.cindodcindy.etherapy.model.post_mot_mus.PostMotivasiMuslim;
 import com.cindodcindy.etherapy.model.post_music.PostMusic;
 import com.google.gson.JsonObject;
 
@@ -37,5 +39,20 @@ public interface MethodsFactory {
     })
     @GET("/kristen")
     Call<GetMotivasiKristen> getChMotivation(@HeaderMap Map<String,String > Map);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @POST("/muslim")
+    Call<PostMotivasiMuslim> postMsMotivation(@Body JsonObject body);
+
+
+    @Headers({
+            "Content-Type:application/json"
+    })
+    @GET("/muslim")
+    Call<GetMotivasiMuslim> getMsMotivation(@HeaderMap Map<String,String > Map);
+
 
 }
