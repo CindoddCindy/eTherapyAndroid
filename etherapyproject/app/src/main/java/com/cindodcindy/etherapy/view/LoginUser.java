@@ -45,7 +45,17 @@ public class LoginUser extends AppCompatActivity {
         button_user_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loginUser();
+                if(editText_nama.getText().toString().isEmpty()&&editText_email.getText().toString().isEmpty()&&editText_password.getText().toString().isEmpty()){
+                    editText_nama.setError("nama belum diisi");
+                    editText_email.setError("Email belum diisi");
+                    editText_password.setError("password belum diisi");
+
+
+                }else {
+                    loginUser();
+
+
+                }
             }
         });
     }
