@@ -1,16 +1,19 @@
 package com.cindodcindy.etherapy.view.adapter_admin;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.model.MusicClass;
+import com.cindodcindy.etherapy.view.PlayMusicActivity;
 import com.cindodcindy.etherapy.view.adapter_user.UserAdapterMusic;
 
 import java.util.List;
@@ -38,6 +41,13 @@ public class AdminMusicAdapter extends RecyclerView.Adapter<AdminMusicAdapter.Mu
     @Override
     public void onBindViewHolder( AdminMusicAdapter.MusicAdapterChild holder, int position) {
         holder.textView_admin_lihat_music_title.setText(modelSementaras.get(position).getTitle());
+        holder.cardView_admin_play_music.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(context, PlayMusicActivity.class);
+                context.startActivity(intent);
+            }
+        });
 
 
     }
@@ -49,12 +59,15 @@ public class AdminMusicAdapter extends RecyclerView.Adapter<AdminMusicAdapter.Mu
 
     public class MusicAdapterChild extends RecyclerView.ViewHolder{
 
+        private CardView cardView_admin_play_music;
+
         private TextView textView_admin_lihat_music_title;
 
         public MusicAdapterChild( View itemView) {
             super(itemView);
 
             textView_admin_lihat_music_title=itemView.findViewById(R.id.tv_admin_lihat_music);
+            cardView_admin_play_music=itemView.findViewById(R.id.cv_admin_play_music);
         }
     }
 }

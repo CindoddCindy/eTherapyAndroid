@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Etherapy">
-        <activity android:name=".view.ShowListMpTri"></activity>
+        <activity android:name=".view.PlayMusicActivity"></activity>
+        <activity android:name=".view.ShowListMpTri" />
         <activity android:name=".view.UploadMusicActivity" />
         <activity android:name=".view.ScoreEror" />
         <activity android:name=".view.LihatScore" />
