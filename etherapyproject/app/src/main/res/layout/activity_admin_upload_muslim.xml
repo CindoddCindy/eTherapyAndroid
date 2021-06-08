@@ -81,7 +81,7 @@
 
     </EditText>
     <Button
-        android:id="@+id/btn_upload_motivation_muslim"
+        android:id="@+id/btn_upload_motivation_muslim_activity"
         android:text="Post Motivasi"
         android:layout_margin="10dp"
         android:layout_width="match_parent"

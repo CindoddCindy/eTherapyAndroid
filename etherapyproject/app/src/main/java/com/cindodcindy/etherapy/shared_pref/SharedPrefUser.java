@@ -3,9 +3,8 @@ package com.cindodcindy.etherapy.shared_pref;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-public class SharedPrefHandle {
-
-    public static final String SP_ETHERAPYADMIN_APP = "spETherapyAdmin";
+public class SharedPrefUser {
+    public static final String SP_ETHERAPYUSER_APP = "spETherapyAdmin";
 
     public static final String SP_NAMA = "spNama";
     public static final String SP_EMAIL = "spEmail";
@@ -16,8 +15,8 @@ public class SharedPrefHandle {
     SharedPreferences sp;
     SharedPreferences.Editor spEditor;
 
-    public SharedPrefHandle(Context context){
-        sp = context.getSharedPreferences(SP_ETHERAPYADMIN_APP, Context.MODE_PRIVATE);
+    public SharedPrefUser(Context context){
+        sp = context.getSharedPreferences(SP_ETHERAPYUSER_APP, Context.MODE_PRIVATE);
         spEditor = sp.edit();
     }
 

@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.shared_pref.SharedPrefHandle;
+import com.cindodcindy.etherapy.shared_pref.SharedPrefUser;
 
 public class LoginUser extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class LoginUser extends AppCompatActivity {
 
     private EditText editText_nama, editText_email, editText_password;
 
-    private SharedPrefHandle sharedPrefHandle;
+    private SharedPrefUser sharedPrefUser;
 
 
     @Override
@@ -27,14 +28,14 @@ public class LoginUser extends AppCompatActivity {
         setContentView(R.layout.activity_login_user);
 
 
-        sharedPrefHandle=new SharedPrefHandle(LoginUser.this);
+        sharedPrefUser=new SharedPrefUser(LoginUser.this);
 
         editText_nama=findViewById(R.id.et_user_name);
         editText_email=findViewById(R.id.et_user_email);
         editText_password=findViewById(R.id.et_user_password);
 
-        if (sharedPrefHandle.getSPSudahLogin()){
-            startActivity(new Intent(LoginUser.this, BottomNavAdmin.class)
+        if (sharedPrefUser.getSPSudahLogin()){
+            startActivity(new Intent(LoginUser.this, BottomNavUser.class)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
             finish();
         }
@@ -68,11 +69,11 @@ public class LoginUser extends AppCompatActivity {
         String password=editText_password.getText().toString();
 
         Toast.makeText(getApplicationContext(), "BERHASIL LOGIN", Toast.LENGTH_SHORT).show();
-        sharedPrefHandle.setSpNama(SharedPrefHandle.SP_NAMA, nama);
-        sharedPrefHandle.setSpEmail(SharedPrefHandle.SP_EMAIL,email);
-        sharedPrefHandle.setSpPassword(SharedPrefHandle.SP_PASSWORD,password);
+        sharedPrefUser.setSpNama(SharedPrefHandle.SP_NAMA, nama);
+        sharedPrefUser.setSpEmail(SharedPrefHandle.SP_EMAIL,email);
+        sharedPrefUser.setSpPassword(SharedPrefHandle.SP_PASSWORD,password);
         // Shared Pref ini berfungsi untuk menjadi trigger session login
-        sharedPrefHandle.saveSPBoolean(SharedPrefHandle.SP_SUDAH_LOGIN, true);
+        sharedPrefUser.saveSPBoolean(SharedPrefHandle.SP_SUDAH_LOGIN, true);
         startActivity(new Intent(getApplicationContext(), BottomNavUser.class)
                 .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
         finish();

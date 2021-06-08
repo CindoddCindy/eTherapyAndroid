@@ -37,7 +37,7 @@ public class AdminUploadMuslim extends AppCompatActivity {
         editText_description=findViewById(R.id.edit_text_admin_upload_description_muslin);
         editText_content=findViewById(R.id.edit_text_admin_upload_content_muslin);
 
-        button_upload_motivation=findViewById(R.id.btn_upload_motivasi_muslim);
+        button_upload_motivation=findViewById(R.id.btn_upload_motivation_muslim_activity);
 
         textView_btn_lihat_muslim_list_rate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +51,10 @@ public class AdminUploadMuslim extends AppCompatActivity {
         button_upload_motivation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                uploadMotivation();
+                //uploadMotivation();
+                //Intent intent = new Intent(AdminUploadMuslim.this, MotivasiMuslim.class);
+                //startActivity(intent);
+                Toast.makeText(AdminUploadMuslim.this, "Berhasil Upload", Toast.LENGTH_SHORT).show();
             }
         });
     }

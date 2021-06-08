@@ -82,7 +82,7 @@
     </EditText>
 
     <Button
-        android:id="@+id/btn_admin_upload_kristen"
+        android:id="@+id/btn_admin_upload_kristen_motivasi"
         android:text="Post Motivasi"
         android:layout_margin="10dp"
         android:layout_width="match_parent"

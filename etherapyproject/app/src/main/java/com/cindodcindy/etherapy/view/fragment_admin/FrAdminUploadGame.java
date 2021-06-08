@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.view.seerate.AdminLihatJwabanQuiz;
@@ -34,6 +36,7 @@ public class FrAdminUploadGame extends Fragment {
     }
 
     private TextView textView_btn_admin_lihat_quiz;
+    private Button button_upload_quiz;
 
     /**
      * Use this factory method to create a new instance of
@@ -69,6 +72,14 @@ public class FrAdminUploadGame extends Fragment {
          View view =inflater.inflate(R.layout.fragment_fr_admin_upload_game, container, false);
 
          textView_btn_admin_lihat_quiz=view.findViewById(R.id.tv_btn_admin_lihat_quiz);
+         button_upload_quiz=view.findViewById(R.id.btn_upload_quiz);
+
+         button_upload_quiz.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Toast.makeText(getActivity(), "Berhasil Upload", Toast.LENGTH_SHORT).show();
+             }
+         });
 
          textView_btn_admin_lihat_quiz.setOnClickListener(new View.OnClickListener() {
              @Override

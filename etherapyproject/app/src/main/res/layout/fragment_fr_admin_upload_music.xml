@@ -18,13 +18,12 @@
         >
 
     </TextView>
-   <MediaPlayer
-       android:id="@+id/media_player_upload"
-       android:layout_margin="10dp"
-       android:layout_width="match_parent"
-       android:layout_height="200dp">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_baseline_music_note_24">
 
-   </MediaPlayer>
+    </ImageView>
     <Button
         android:id="@+id/btn_pilih_file"
         android:text="Pilih File"

@@ -27,6 +27,7 @@
 
     </EditText>
     <Button
+        android:id="@+id/btn_upload_quiz"
         android:text="Upload Quiz"
         android:layout_margin="10dp"
         android:layout_width="match_parent"

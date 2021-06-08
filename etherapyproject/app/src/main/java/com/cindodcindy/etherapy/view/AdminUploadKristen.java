@@ -36,7 +36,7 @@ public class AdminUploadKristen extends AppCompatActivity {
        editText_description=findViewById(R.id.edit_text_admin_upload_description_kristen);
        editText_content=findViewById(R.id.edit_text_admin_upload_kristen_content);
 
-        button_upload_kristen=findViewById(R.id.btn_upload_motivasi_kristen);
+        button_upload_kristen=findViewById(R.id.btn_admin_upload_kristen_motivasi);
 
         textView_lihat_rate_kristen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,8 +50,9 @@ public class AdminUploadKristen extends AppCompatActivity {
         button_upload_kristen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    uploadMotivation();
-            }
+                   // uploadMotivation();
+
+                Toast.makeText(AdminUploadKristen.this, "Berhasil Upload", Toast.LENGTH_SHORT).show();            }
         });
     }
 
