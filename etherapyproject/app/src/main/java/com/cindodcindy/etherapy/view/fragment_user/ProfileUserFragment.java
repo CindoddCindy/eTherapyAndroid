@@ -1,5 +1,6 @@
 package com.cindodcindy.etherapy.view.fragment_user;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.shared_pref.SharedPrefUser;
+import com.cindodcindy.etherapy.view.LoginUser;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,6 +34,8 @@ public class ProfileUserFragment extends Fragment {
     private TextView textView_email_user, textView_password_user;
 
     private Button button_logout_user;
+
+    private SharedPrefUser sharedPrefUser;
 
     public ProfileUserFragment() {
         // Required empty public constructor
@@ -69,6 +74,8 @@ public class ProfileUserFragment extends Fragment {
         // Inflate the layout for this fragment
        View view =inflater.inflate(R.layout.fragment_profile_user, container, false);
 
+       sharedPrefUser= new SharedPrefUser(getContext());
+
        textView_email_user=view.findViewById(R.id.tv_user_email);
        textView_password_user=view.findViewById(R.id.tv_user_password);
 
@@ -77,9 +84,21 @@ public class ProfileUserFragment extends Fragment {
        button_logout_user.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+               sharedPrefUser.saveSPBoolean(SharedPrefUser.SP_SUDAH_LOGIN, false);
+               startActivity(new Intent(getActivity(), LoginUser.class)
+                       .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
 
            }
        });
+
+       getDataSharedPref();
         return view;
+    }
+
+    public void getDataSharedPref(){
+        textView_email_user.setText(sharedPrefUser.getSPEmail());
+        textView_password_user.setText(sharedPrefUser.getSpPassword());
+
+
     }
 }

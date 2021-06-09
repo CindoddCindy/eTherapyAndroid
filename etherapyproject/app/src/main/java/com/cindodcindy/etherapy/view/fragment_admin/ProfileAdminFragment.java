@@ -1,5 +1,6 @@
 package com.cindodcindy.etherapy.view.fragment_admin;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.shared_pref.SharedPrefHandle;
+import com.cindodcindy.etherapy.view.LoginAdmin;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,6 +34,8 @@ public class ProfileAdminFragment extends Fragment {
     private Button button_admin_logout;
 
     private TextView textView_email_admin, textView_password_admin;
+
+    private SharedPrefHandle sharedPrefHandle;
 
     public ProfileAdminFragment() {
         // Required empty public constructor
@@ -68,10 +73,26 @@ public class ProfileAdminFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
          View view = inflater.inflate(R.layout.fragment_profile_admin, container, false);
+
+         sharedPrefHandle=new SharedPrefHandle(getContext());
+
          textView_email_admin=view.findViewById(R.id.tv_admin_email);
          textView_password_admin=view.findViewById(R.id.tv_admin_password);
 
          button_admin_logout=view.findViewById(R.id.btn_admin_logout);
+
+         textView_email_admin.setText(sharedPrefHandle.getSPEmail());
+         textView_password_admin.setText(sharedPrefHandle.getSpPassword());
+
+         button_admin_logout.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 sharedPrefHandle.saveSPBoolean(SharedPrefHandle.SP_SUDAH_LOGIN, false);
+                 startActivity(new Intent(getActivity(), LoginAdmin.class)
+                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+
+             }
+         });
 
         return view;
     }

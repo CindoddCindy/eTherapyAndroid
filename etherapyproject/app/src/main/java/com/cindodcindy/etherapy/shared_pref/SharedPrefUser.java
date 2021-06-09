@@ -66,4 +66,6 @@ public class SharedPrefUser {
     public Boolean getSPSudahLogin(){
         return sp.getBoolean(SP_SUDAH_LOGIN, false);
     }
+
+
 }
