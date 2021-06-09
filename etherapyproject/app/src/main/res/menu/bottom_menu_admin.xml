@@ -12,4 +12,8 @@
     <item android:id="@+id/quiz_admin"
         android:icon="@drawable/ic_baseline_quiz_24"
         android:title="Upload Quiz" />
+
+    <item android:id="@+id/profile_admin"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
 </menu>

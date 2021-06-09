@@ -11,6 +11,7 @@ import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.view.fragment_admin.FrAdminUploadGame;
 import com.cindodcindy.etherapy.view.fragment_admin.FrAdminUploadMotivasi;
 import com.cindodcindy.etherapy.view.fragment_admin.FrAdminUploadMusic;
+import com.cindodcindy.etherapy.view.fragment_admin.ProfileAdminFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class BottomNavAdmin extends AppCompatActivity {
@@ -45,6 +46,10 @@ public class BottomNavAdmin extends AppCompatActivity {
 
                     case R.id.quiz_admin:
                         fragment = new FrAdminUploadGame();
+                        break;
+
+                    case R.id.profile_admin:
+                        fragment = new ProfileAdminFragment();
                         break;
                 }
                 return getFragmentPage(fragment);

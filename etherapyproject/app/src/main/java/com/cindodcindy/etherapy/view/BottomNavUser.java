@@ -14,6 +14,7 @@ import com.cindodcindy.etherapy.view.fragment_admin.FrAdminUploadMusic;
 import com.cindodcindy.etherapy.view.fragment_user.FrUserGame;
 import com.cindodcindy.etherapy.view.fragment_user.FrUserMotivasi;
 import com.cindodcindy.etherapy.view.fragment_user.FrUserMusic;
+import com.cindodcindy.etherapy.view.fragment_user.ProfileUserFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class BottomNavUser extends AppCompatActivity {
@@ -48,6 +49,10 @@ public class BottomNavUser extends AppCompatActivity {
 
                     case R.id.quiz_user:
                         fragment = new FrUserGame();
+                        break;
+
+                    case R.id.profile_user:
+                        fragment = new ProfileUserFragment();
                         break;
                 }
                 return getFragmentPage(fragment);
