@@ -39,7 +39,7 @@
                     android:id="@+id/profile_image"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
-                    android:src="@drawable/ic_baseline_music_note_24"
+                    android:src="@drawable/music_ill_dua"
                     app:civ_border_width="2dp"
                     app:civ_border_color="#FF000000"/>
 

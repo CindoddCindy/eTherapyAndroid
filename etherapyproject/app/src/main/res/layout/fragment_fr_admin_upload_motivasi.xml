@@ -19,13 +19,13 @@
         >
 
     </TextView>
-    <TextView
-        android:background="@drawable/ic_baseline_emoji_emotions_24"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/illustration_ill"
         android:layout_margin="10dp"
         android:layout_width="150dp"
         android:layout_height="200dp">
 
-    </TextView>
+    </de.hdodenhof.circleimageview.CircleImageView>
     <Button
         android:id="@+id/btn_upload_motivasi_muslim"
         android:text="Motivasi Muslim"

@@ -38,7 +38,7 @@
                         android:id="@+id/profile_image"
                         android:layout_width="96dp"
                         android:layout_height="96dp"
-                        android:src="@drawable/ic_baseline_emoji_emotions_24"
+                        android:src="@drawable/quizz_ill"
                         app:civ_border_width="2dp"
                         app:civ_border_color="#FF000000"/>
 
@@ -112,11 +112,13 @@
                                             android:orientation="vertical">
 
                                             <RadioButton
+                                                android:id="@+id/rb_admin_a"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:text="A" />
 
                                             <RadioButton
+                                                android:id="@+id/rb_admin_b"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:text="B" />
@@ -140,14 +142,16 @@
                                             android:orientation="vertical">
 
                                             <RadioButton
+                                                android:id="@+id/rb_admin_c"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:text="A" />
+                                                android:text="C" />
 
                                             <RadioButton
+                                                android:id="@+id/rb_admin_d"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:text="B" />
+                                                android:text="D" />
 
                                         </RadioGroup>
 

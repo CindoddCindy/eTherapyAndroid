@@ -20,13 +20,14 @@
         >
 
     </TextView>
-    <MediaPlayer
+    <ImageView
+        android:src="@drawable/music_ill_dua"
         android:id="@+id/media_player_upload"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="200dp">
 
-    </MediaPlayer>
+    </ImageView>
     <Button
         android:id="@+id/btn_pilih_file"
         android:text="Pilih File"

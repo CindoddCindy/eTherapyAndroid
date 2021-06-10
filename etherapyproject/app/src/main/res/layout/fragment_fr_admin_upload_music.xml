@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
@@ -18,12 +19,14 @@
         >
 
     </TextView>
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="2dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/ic_baseline_music_note_24">
+        android:src="@drawable/music_ill">
 
-    </ImageView>
+    </de.hdodenhof.circleimageview.CircleImageView>
     <Button
         android:id="@+id/btn_pilih_file"
         android:text="Pilih File"
