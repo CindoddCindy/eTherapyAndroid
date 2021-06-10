@@ -36,7 +36,6 @@
 
     </TextView>
     <de.hdodenhof.circleimageview.CircleImageView
-        app:civ_border_width="2dp"
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:src="@drawable/mitra_profile_example">
