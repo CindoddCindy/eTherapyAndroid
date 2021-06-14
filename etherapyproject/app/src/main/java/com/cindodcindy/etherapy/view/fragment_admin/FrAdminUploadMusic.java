@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.MusicLaporan;
 import com.cindodcindy.etherapy.view.ShowListMpTri;
 import com.cindodcindy.etherapy.view.seerate.AdminLihatRateMusic;
 
@@ -37,6 +38,8 @@ public class FrAdminUploadMusic extends Fragment {
 
     private TextView textView_admin_lihat_music_rate;
     private Button button_pilih_file, button_upload_file;
+
+    private TextView textView_lihat_laporan_music;
 
     public FrAdminUploadMusic() {
         // Required empty public constructor
@@ -78,6 +81,7 @@ public class FrAdminUploadMusic extends Fragment {
         button_upload_file=view.findViewById(R.id.btn_upload_file);
 
         textView_admin_lihat_music_rate=view.findViewById(R.id.tv_btn_lihat_rate_music);
+        textView_lihat_laporan_music=view.findViewById(R.id.tv_btn_lihat_laporan_music);
 
         button_pilih_file.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,6 +102,14 @@ public class FrAdminUploadMusic extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(),AdminLihatRateMusic.class);
+                startActivity(intent);
+            }
+        });
+
+        textView_lihat_laporan_music.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MusicLaporan.class);
                 startActivity(intent);
             }
         });

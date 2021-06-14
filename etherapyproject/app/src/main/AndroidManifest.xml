@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/e_terapy_asset"
         android:supportsRtl="true"
         android:theme="@style/Theme.Etherapy">
-        <activity android:name=".view.PlayMusicActivity"></activity>
+        <activity android:name=".view.MusicLaporan"></activity>
+        <activity android:name=".view.PlayMusicActivity" />
         <activity android:name=".view.ShowListMpTri" />
         <activity android:name=".view.UploadMusicActivity" />
         <activity android:name=".view.ScoreEror" />

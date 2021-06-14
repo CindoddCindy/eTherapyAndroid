@@ -2,4 +2,7 @@
     <string name="app_name">Etherapy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="oil_price">Oil Price</string>
+    <string name="price_in_last_12_days">Price in last 12 days</string>
 </resources>
