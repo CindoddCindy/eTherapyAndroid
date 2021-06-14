@@ -12,7 +12,11 @@
         android:roundIcon="@mipmap/e_terapy_asset"
         android:supportsRtl="true"
         android:theme="@style/Theme.Etherapy">
-        <activity android:name=".view.GameLaporan"></activity>
+        <activity android:name=".view.UserVidioMuslim"></activity>
+        <activity android:name=".view.UserVidioKristen" />
+        <activity android:name=".view.AdminSelectVidioMuslim" />
+        <activity android:name=".view.AdminSelectVidioKristen" />
+        <activity android:name=".view.GameLaporan" />
         <activity android:name=".view.MuslimLaporan" />
         <activity android:name=".view.KristenLaporan" />
         <activity android:name=".view.MusicLaporan" />
