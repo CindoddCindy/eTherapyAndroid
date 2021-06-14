@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.AdminSelectVidioKristen;
+import com.cindodcindy.etherapy.view.AdminSelectVidioMuslim;
 import com.cindodcindy.etherapy.view.AdminUploadKristen;
 import com.cindodcindy.etherapy.view.AdminUploadMuslim;
 
@@ -75,7 +77,7 @@ public class FrAdminUploadMotivasi extends Fragment {
         button_uplaod_kristen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getActivity(), AdminUploadKristen.class);
+                Intent intent= new Intent(getActivity(), AdminSelectVidioKristen.class);
                 startActivity(intent);
             }
         });
@@ -83,7 +85,7 @@ public class FrAdminUploadMotivasi extends Fragment {
          button_upload_muslim.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Intent intent = new Intent(getActivity(), AdminUploadMuslim.class);
+                 Intent intent = new Intent(getActivity(), AdminSelectVidioMuslim.class);
                  startActivity(intent);
              }
          });

@@ -13,6 +13,7 @@ import android.widget.Button;
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.view.UserKristenMotivasi;
 import com.cindodcindy.etherapy.view.UserMuslimMotivasi;
+import com.cindodcindy.etherapy.view.YutubListKristen;
 
 /**
  * A simple {@link Fragment} subclass.

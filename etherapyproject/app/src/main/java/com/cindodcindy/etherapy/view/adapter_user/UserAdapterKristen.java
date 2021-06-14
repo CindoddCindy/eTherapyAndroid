@@ -1,6 +1,8 @@
 package com.cindodcindy.etherapy.view.adapter_user;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +40,14 @@ public class UserAdapterKristen  extends RecyclerView.Adapter<UserAdapterKristen
 
     public void onBindViewHolder( UserAdapterKristen.KristenChild holder, int position) {
         holder.textView_title_motivation.setText(modelSementaras.get(position).getTitle());
+        holder.textView_title_motivation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.youtube.com/watch?v=eJiKIgCSMuM&list=PLKGdn6ZnYvjpoNEMXVtymRHW1tepHXILl"));
+               context.startActivity(webIntent);
+            }
+        });
 
 
     }

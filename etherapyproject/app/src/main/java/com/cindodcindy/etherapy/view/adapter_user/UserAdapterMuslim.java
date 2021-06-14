@@ -1,6 +1,8 @@
 package com.cindodcindy.etherapy.view.adapter_user;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +39,14 @@ public class UserAdapterMuslim extends RecyclerView.Adapter<UserAdapterMuslim.Mu
     @Override
     public void onBindViewHolder( UserAdapterMuslim.MuslimChild holder, int position) {
         holder.textView_title_motivation_muslim.setText(modelSementaras.get(position).getTitle());
+        holder.textView_title_motivation_muslim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.youtube.com/watch?v=LH-ElXUNnzs"));
+                context.startActivity(webIntent);
+            }
+        });
 
 
     }
