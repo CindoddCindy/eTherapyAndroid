@@ -51,7 +51,7 @@
     </EditText>
 
     <Button
-        android:text="Login"
+        android:text="Daftar"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,6 +59,18 @@
         android:background="#9F3434">
 
     </Button>
+
+    <TextView
+        android:id="@+id/tv_admin_lupa_password"
+        android:gravity="center"
+        android:hint="Lupa Password"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    </TextView>
+
 
 
 

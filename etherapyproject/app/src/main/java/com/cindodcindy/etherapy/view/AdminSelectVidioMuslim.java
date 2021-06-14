@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cindodcindy.etherapy.R;
@@ -23,6 +24,8 @@ public class AdminSelectVidioMuslim extends AppCompatActivity {
 
     // views for button
     private Button btnSelect, btnUpload;
+
+    private TextView textView_btn_laporan;
 
     // view for image view
     private ImageView imageView;
@@ -51,6 +54,15 @@ public class AdminSelectVidioMuslim extends AppCompatActivity {
         btnSelect = findViewById(R.id.btnChooseMs);
         btnUpload = findViewById(R.id.btnUploadIs);
         imageView = findViewById(R.id.imgViewMs);
+        textView_btn_laporan=findViewById(R.id.tv_btn_ke_laporan_muslim);
+
+        textView_btn_laporan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminSelectVidioMuslim.this, MuslimLaporan.class);
+                startActivity(intent);
+            }
+        });
 
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override

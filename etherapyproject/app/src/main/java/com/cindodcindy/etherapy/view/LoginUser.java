@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cindodcindy.etherapy.R;
@@ -17,6 +18,7 @@ public class LoginUser extends AppCompatActivity {
 
     private Button button_user_login;
 
+    private TextView textView_lupa_password;
     private EditText editText_nama, editText_email, editText_password;
 
     private SharedPrefUser sharedPrefUser;
@@ -30,9 +32,18 @@ public class LoginUser extends AppCompatActivity {
 
         sharedPrefUser=new SharedPrefUser(LoginUser.this);
 
+        textView_lupa_password=findViewById(R.id.tv_user_lupa_password);
         editText_nama=findViewById(R.id.et_user_name);
         editText_email=findViewById(R.id.et_user_email);
         editText_password=findViewById(R.id.et_user_password);
+
+        textView_lupa_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(LoginUser.this,LupaPasswordUser.class);
+                startActivity(intent);
+            }
+        });
 
         if (sharedPrefUser.getSPSudahLogin()){
             startActivity(new Intent(LoginUser.this, BottomNavUser.class)

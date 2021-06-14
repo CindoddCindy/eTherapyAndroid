@@ -23,7 +23,7 @@
     </TextView>
 
     <ImageView
-        android:id="@+id/imgView"
+        android:id="@+id/imgViewAdmin"
         android:layout_width="match_parent"
         android:layout_height="300dp" />
 
@@ -39,7 +39,7 @@
         <!--Button for choosing image from gallery-->
         <Button
             android:layout_margin="5dp"
-            android:id="@+id/btnChoose"
+            android:id="@+id/btnChooseAdmin"
             android:text="Choose"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -48,12 +48,26 @@
         <!--Button for uploading image-->
         <Button
             android:layout_margin="5dp"
-            android:id="@+id/btnUpload"
+            android:id="@+id/btnUploadAdmin"
             android:text="Upload"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_btn_ke_laporan_kristen"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="#F3EDED"
+        android:text="Motivasi Kristen Laporan"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#514E4E">
+
+    </TextView>
+
 
     <!--Image View for showing image choosen from gallery-->
 

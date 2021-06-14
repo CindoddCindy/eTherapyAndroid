@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -24,6 +25,8 @@ public class AdminSelectVidioKristen extends AppCompatActivity {
 
     // views for button
     private Button btnSelect, btnUpload;
+
+    private TextView textView_btn_lihat_laporan;
 
     // view for image view
     private ImageView imageView;
@@ -39,7 +42,7 @@ public class AdminSelectVidioKristen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_select_vidio_kristen);
-
+/*
         ActionBar actionBar;
         actionBar = getSupportActionBar();
         ColorDrawable colorDrawable
@@ -47,10 +50,22 @@ public class AdminSelectVidioKristen extends AppCompatActivity {
                 Color.parseColor("#0F9D58"));
         actionBar.setBackgroundDrawable(colorDrawable);
 
+ */
+
         // initialise views
-        btnSelect = findViewById(R.id.btnChoose);
-        btnUpload = findViewById(R.id.btnUpload);
-        imageView = findViewById(R.id.imgView);
+        btnSelect = findViewById(R.id.btnChooseAdmin);
+        btnUpload = findViewById(R.id.btnUploadAdmin);
+        imageView = findViewById(R.id.imgViewAdmin);
+
+        textView_btn_lihat_laporan=findViewById(R.id.tv_btn_ke_laporan_kristen);
+
+        textView_btn_lihat_laporan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminSelectVidioKristen.this, KristenLaporan.class);
+                startActivity(intent);
+            }
+        });
 
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -25,6 +25,12 @@ public class PlayMusicActivity extends AppCompatActivity {
         setContentView(R.layout.activity_play_music);
 
         mp=MediaPlayer.create(this, R.raw.file_example_);
+        mp=MediaPlayer.create(this, R.raw.music_satu);
+        mp=MediaPlayer.create(this, R.raw.music_dua);
+        mp=MediaPlayer.create(this, R.raw.music_tiga);
+        mp=MediaPlayer.create(this, R.raw.music_empat);
+        mp=MediaPlayer.create(this, R.raw.music_lima);
+
 
         button_play=findViewById(R.id.btnPlay);
 

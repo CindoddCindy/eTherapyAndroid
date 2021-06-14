@@ -52,13 +52,24 @@
 
     <Button
         android:id="@+id/btn_login_user"
-        android:text="Login"
+        android:text="Daftar"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#9F3434">
 
     </Button>
+
+    <TextView
+        android:id="@+id/tv_user_lupa_password"
+        android:hint="Lupa Password"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    </TextView>
+
 
 
 </LinearLayout>

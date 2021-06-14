@@ -36,17 +36,18 @@ public class UserMuslimMotivasi extends AppCompatActivity {
 
 
         modelSementaraList = new ArrayList<>();
-        modelSementaraList.add(new MusicClass("Agama tidak melarang sesuatu perbuatan kalau perbuatan itu tidak merusak jiwa"));
-        modelSementaraList.add(new MusicClass("Cinta ialah sebuah pupuk yang dapat menyuburkan segala rasa tandus pada hati"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
 
 
         userAdapterMuslim= new UserAdapterMuslim(UserMuslimMotivasi.this,modelSementaraList);

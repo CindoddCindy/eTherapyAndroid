@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cindodcindy.etherapy.R;
@@ -15,6 +16,8 @@ import com.cindodcindy.etherapy.shared_pref.SharedPrefHandle;
 public class LoginAdmin extends AppCompatActivity {
 
     private Button button_admin_login;
+
+    private TextView textView_lupa_password;
 
     private SharedPrefHandle sharedPrefHandle;
 
@@ -28,6 +31,15 @@ public class LoginAdmin extends AppCompatActivity {
 
         editText_nama=findViewById(R.id.et_admin_nama);
         editText_email=findViewById(R.id.et_admin_email);
+        textView_lupa_password=findViewById(R.id.tv_admin_lupa_password);
+
+        textView_lupa_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginAdmin.this,LupaPasswordAdmin.class);
+                startActivity(intent);
+            }
+        });
         editText_password=findViewById(R.id.et_admin_password);
 
         if (sharedPrefHandle.getSPSudahLogin()){

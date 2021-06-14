@@ -37,16 +37,16 @@ public class UserKristenMotivasi extends AppCompatActivity {
 
 
         modelSementaraList = new ArrayList<>();
-        modelSementaraList.add(new MusicClass("Anda akan kesepian jika membangun tembok, bukan jembatan"));
-        modelSementaraList.add(new MusicClass("Kesempatan terbaik adalah melakukan hal yang baik untuk orang lain"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
-        modelSementaraList.add(new MusicClass("Motivation Title"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
+        modelSementaraList.add(new MusicClass("Click For Watching Motivation Video"));
 
 
         userAdapterKristen= new UserAdapterKristen(UserKristenMotivasi.this,modelSementaraList);
