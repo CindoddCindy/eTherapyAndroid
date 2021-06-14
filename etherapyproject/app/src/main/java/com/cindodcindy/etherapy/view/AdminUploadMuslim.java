@@ -24,6 +24,8 @@ import retrofit2.Response;
 public class AdminUploadMuslim extends AppCompatActivity {
 
     private TextView textView_btn_lihat_muslim_list_rate;
+
+    private TextView textView_lihat_chart;
     private EditText editText_title, editText_description, editText_content;
     private Button button_upload_motivation;
 
@@ -32,6 +34,16 @@ public class AdminUploadMuslim extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_upload_muslim);
         textView_btn_lihat_muslim_list_rate=findViewById(R.id.tv_btn_admin_lihat_muslim_rate);
+
+        textView_lihat_chart=findViewById(R.id.tv_btn_lihat_laporan_muslim);
+
+        textView_lihat_chart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminUploadMuslim.this, MuslimLaporan.class);
+                startActivity(intent);
+            }
+        });
 
         editText_title=findViewById(R.id.edit_text_admin_upload_title_muslim);
         editText_description=findViewById(R.id.edit_text_admin_upload_description_muslin);

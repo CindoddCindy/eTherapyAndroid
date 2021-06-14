@@ -135,7 +135,7 @@
 
 
     <TextView
-        android:id="@+id/tv_btn_lihat_laporan_music"
+        android:id="@+id/tv_btn_lihat_laporan_game"
         android:gravity="center"
         android:textSize="15dp"
         android:textColor="#F3EDED"

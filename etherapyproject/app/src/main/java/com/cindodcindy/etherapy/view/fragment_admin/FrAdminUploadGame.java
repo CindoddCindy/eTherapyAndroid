@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.GameLaporan;
 import com.cindodcindy.etherapy.view.seerate.AdminLihatJwabanQuiz;
 
 /**
@@ -35,7 +36,7 @@ public class FrAdminUploadGame extends Fragment {
         // Required empty public constructor
     }
 
-    private TextView textView_btn_admin_lihat_quiz;
+    private TextView textView_btn_admin_lihat_quiz, textView_btn_admin_lihat_chart;
     private Button button_upload_quiz;
 
     /**
@@ -72,6 +73,7 @@ public class FrAdminUploadGame extends Fragment {
          View view =inflater.inflate(R.layout.fragment_fr_admin_upload_game, container, false);
 
          textView_btn_admin_lihat_quiz=view.findViewById(R.id.tv_btn_admin_lihat_quiz);
+         textView_btn_admin_lihat_chart=view.findViewById(R.id.tv_btn_admin_lihat_quiz);
          button_upload_quiz=view.findViewById(R.id.btn_upload_quiz);
 
          button_upload_quiz.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +87,14 @@ public class FrAdminUploadGame extends Fragment {
              @Override
              public void onClick(View v) {
                  Intent intent =new Intent(getActivity(), AdminLihatJwabanQuiz.class);
+                 startActivity(intent);
+             }
+         });
+
+         textView_btn_admin_lihat_chart.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent =new Intent(getActivity(), GameLaporan.class);
                  startActivity(intent);
              }
          });

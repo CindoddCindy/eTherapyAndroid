@@ -106,7 +106,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/tv_btn_lihat_laporan_music"
+        android:id="@+id/tv_btn_lihat_laporan_kirsten"
         android:gravity="center"
         android:textSize="15dp"
         android:textColor="#F3EDED"
