@@ -73,7 +73,7 @@ public class FrAdminUploadGame extends Fragment {
          View view =inflater.inflate(R.layout.fragment_fr_admin_upload_game, container, false);
 
          textView_btn_admin_lihat_quiz=view.findViewById(R.id.tv_btn_admin_lihat_quiz);
-         textView_btn_admin_lihat_chart=view.findViewById(R.id.tv_btn_admin_lihat_quiz);
+         textView_btn_admin_lihat_chart=view.findViewById(R.id.tv_btn_lihat_laporan_game);
          button_upload_quiz=view.findViewById(R.id.btn_upload_quiz);
 
          button_upload_quiz.setOnClickListener(new View.OnClickListener() {
