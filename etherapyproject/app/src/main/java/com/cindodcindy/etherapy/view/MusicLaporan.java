@@ -66,18 +66,20 @@ public class MusicLaporan extends AppCompatActivity {
     }
 
     private List<Entry> getDataSet() {
-        List<Laporan> lineEntries = new ArrayList<Laporan>();
-        lineEntries.add(new Laporan("Music Satu", 10));
-        lineEntries.add(new Laporan("Music Satu", 12));
-        lineEntries.add(new Laporan("Music Satu", 10));
-        lineEntries.add(new Laporan("Music Satu", 15));
-        lineEntries.add(new Laporan("Music Satu", 10));
-        lineEntries.add(new Laporan("Music Satu", 19));
-        lineEntries.add(new Laporan("Music Satu", 10));
-        lineEntries.add(new Laporan("Music Satu", 11));
-        lineEntries.add(new Laporan("Music Satu", 10));
-        lineEntries.add(new Laporan("Music Satu", 16));
-        return getDataSet();
+        List<Entry> lineEntries = new ArrayList<Entry>();
+        lineEntries.add(new Entry(1, 10));
+        lineEntries.add(new Entry(2, 12));
+        lineEntries.add(new Entry(3, 16));
+        lineEntries.add(new Entry(4, 23));
+        lineEntries.add(new Entry(5, 6));
+        lineEntries.add(new Entry(6, 8));
+        lineEntries.add(new Entry(7, 20));
+        lineEntries.add(new Entry(8, 26));
+        lineEntries.add(new Entry(9, 33));
+        lineEntries.add(new Entry(10, 28));
+
+
+        return lineEntries;
     }
 
 }

@@ -3,6 +3,18 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="oil_price">Oil Price</string>
-    <string name="price_in_last_12_days">Price in last 12 days</string>
+    <string name="oil_price">Rate Music From User</string>
+    <string name="price_in_last_12_days">Data User Rate Music Dalam Sehari</string>
+
+    <string name="kristen_rate">Rate Motivation From User</string>
+    <string name="krsiten_keterangan">Data User Rate Motivasi Kristen Dalam Sehari</string>
+
+
+    <string name="muslim_rate">Rate Motivation From User</string>
+    <string name="muslim_keterangan">Data User Rate Motivasi Muslim Dalam Sehari</string>
+
+
+    <string name="game_answer">Game Answer From User</string>
+    <string name="game_keterangan">Data User Jawab Quiz Dalam Sehari</string>
+
 </resources>
