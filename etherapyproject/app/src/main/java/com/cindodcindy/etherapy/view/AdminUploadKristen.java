@@ -24,7 +24,7 @@ public class AdminUploadKristen extends AppCompatActivity {
 
     private TextView textView_lihat_rate_kristen;
 
-    private TextView textView_btn_lihat_laporan;
+
     private EditText editText_title, editText_description, editText_content;
     private Button button_upload_kristen;
 
@@ -34,15 +34,6 @@ public class AdminUploadKristen extends AppCompatActivity {
         setContentView(R.layout.activity_admin_upload_kristen);
         textView_lihat_rate_kristen=findViewById(R.id.tv_admin_lihat_kristen_list);
 
-        textView_btn_lihat_laporan=findViewById(R.id.tv_btn_lihat_laporan_kirsten);
-
-        textView_btn_lihat_laporan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AdminUploadKristen.this, KristenLaporan.class);
-                startActivity(intent);
-            }
-        });
 
        editText_title=findViewById(R.id.edit_text_admin_upload_title_kristen);
        editText_description=findViewById(R.id.edit_text_admin_upload_description_kristen);

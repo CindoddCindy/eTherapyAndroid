@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.cindodcindy.etherapy.R;
+import com.cindodcindy.etherapy.view.fragment_admin.FrAdminLaporan;
 import com.cindodcindy.etherapy.view.fragment_admin.FrAdminUploadGame;
 import com.cindodcindy.etherapy.view.fragment_admin.FrAdminUploadMotivasi;
 import com.cindodcindy.etherapy.view.fragment_admin.FrAdminUploadMusic;
@@ -47,6 +48,11 @@ public class BottomNavAdmin extends AppCompatActivity {
                     case R.id.quiz_admin:
                         fragment = new FrAdminUploadGame();
                         break;
+
+                    case R.id.laporan_admin:
+                        fragment = new FrAdminLaporan();
+                        break;
+
 
                     case R.id.profile_admin:
                         fragment = new ProfileAdminFragment();

@@ -47,9 +47,9 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
         final MusicClass musicClass = modelSementaras.get(position);
         holder.textView_user_quiz.setText(modelSementaras.get(position).getTitle());
         holder.radioButton_a.setText(modelSementaras.get(position).getJawabA());
-        holder.radioButton_b.setText(modelSementaras.get(position).getJawabB());
+
         holder.radioButton_c.setText(modelSementaras.get(position).getJawabC());
-        holder.radioButton_d.setText(modelSementaras.get(position).getJawabD());
+      /*
         holder.radioGroup_user.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -108,6 +108,8 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
         });
 
 
+       */
+
     }
 
     @Override
@@ -118,7 +120,7 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
     public class UserAdapterChild extends RecyclerView.ViewHolder{
         private TextView textView_user_quiz;
         private RadioGroup radioGroup_user , radioGroup_user_dua;
-        private RadioButton radioButton_a, radioButton_b, radioButton_c, radioButton_d;
+        private RadioButton radioButton_a, radioButton_c;
 
         public UserAdapterChild(@NonNull  View itemView) {
             super(itemView);
@@ -126,9 +128,8 @@ public class UserAdapterGame extends RecyclerView.Adapter<UserAdapterGame.UserAd
             radioGroup_user=itemView.findViewById(R.id.radio_grup_user);
             radioGroup_user_dua=itemView.findViewById(R.id.radio_grup_user_dua);
             radioButton_a=itemView.findViewById(R.id.rb_a);
-            radioButton_b=itemView.findViewById(R.id.rb_b);
             radioButton_c=itemView.findViewById(R.id.rb_c);
-            radioButton_d=itemView.findViewById(R.id.rb_d);
+
         }
     }
 }

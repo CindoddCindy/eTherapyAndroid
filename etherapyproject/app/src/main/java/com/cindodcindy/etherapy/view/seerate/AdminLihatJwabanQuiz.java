@@ -39,15 +39,15 @@ public class AdminLihatJwabanQuiz extends AppCompatActivity {
         //
 
         modelSementaraList = new ArrayList<>();
-        modelSementaraList.add(new MusicClass("Siapa Presiden Indonesia saat ini", "jokowidodo","megawati","sby","susi"));
-        modelSementaraList.add(new MusicClass("Apa Warna Semangka","Merah","biru","putih","kuning"));
-        modelSementaraList.add(new MusicClass("Indonesia Merdeka pada", "17 Agustus","2 Mey","28 Oktober","17 Febuari"));
-        modelSementaraList.add(new MusicClass("Waktu Di Indonesia Di bagi menjadi", "Tiga","dua","satu","empat"));
+        modelSementaraList.add(new MusicClass("Sewaktu Anda Terkena Covid Apakah Anda Merasa Cemas", "Ya","Tidak"));
+        modelSementaraList.add(new MusicClass("ApaKah Ada Tetangga Anda Positiv Covid","Ya","Tidak"));
+        modelSementaraList.add(new MusicClass("Apakah Anda Merasa Cemas Jika Merasa Kurang Sehat", "Ya","Tidak"));
+        modelSementaraList.add(new MusicClass("Apakah Anda Sering Menggunakan Masker", "Ya","Tidak"));
 
-        modelSementaraList.add(new MusicClass("Covid adalah", "bakteri","zat","unsur","virus"));
-        modelSementaraList.add(new MusicClass("Ibu Kota indonesia adalah","Bali","Bandung","Ambon","Jakarta"));
-        modelSementaraList.add(new MusicClass("Beda waktu WIB dan WIT adalah", "5","7","10","2"));
-        modelSementaraList.add(new MusicClass("Matahari Terbit dari", "Tengah","Selatan","kiri","timur"));
+        modelSementaraList.add(new MusicClass(" Apakah Covid adalah Penyakit Menular", "Ya","Tidak"));
+        modelSementaraList.add(new MusicClass("Apakah Anda Rajin Mencuci Tangan Akhir Akhir Ini","Ya","Tidak"));
+        modelSementaraList.add(new MusicClass("Apakah Anda Membawa Handsanitizer Setiap Bepergian", "Ya","Tidak"));
+        modelSementaraList.add(new MusicClass("Apakah Ada Orang Terdekatmu Yang Positiv Covid", "Ya ","Tidak"));
 
 
 /*

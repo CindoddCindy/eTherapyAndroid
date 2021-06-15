@@ -114,12 +114,13 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:text="A" />
-
+<!--
                                             <RadioButton
                                                 android:id="@+id/rb_b"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:text="B" />
+                                                -->
 
                                            </RadioGroup>
 
@@ -144,14 +145,14 @@
                                                 android:id="@+id/rb_c"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:text="A" />
-
+                                                android:text="B" />
+<!--
                                             <RadioButton
                                                 android:id="@+id/rb_d"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:text="B" />
-
+-->
                                         </RadioGroup>
 
 

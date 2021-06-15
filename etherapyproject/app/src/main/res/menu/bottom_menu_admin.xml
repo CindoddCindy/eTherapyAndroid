@@ -13,6 +13,10 @@
         android:icon="@drawable/ic_baseline_quiz_24"
         android:title=" Admin Quiz" />
 
+    <item android:id="@+id/laporan_admin"
+        android:icon="@drawable/ic_baseline_wysiwyg_24"
+        android:title=" Admin Laporan" />
+
     <item android:id="@+id/profile_admin"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="Profile" />
