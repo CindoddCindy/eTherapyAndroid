@@ -88,15 +88,15 @@ public class FrUserGame extends Fragment {
 
 
         modelSementaraList = new ArrayList<>();
-        modelSementaraList.add(new MusicClass("Siapa Presiden Indonesia saat ini", "jokowidodo","megawati","sby","susi"));
-        modelSementaraList.add(new MusicClass("Apa Warna Semangka","Merah","biru","putih","kuning"));
-        modelSementaraList.add(new MusicClass("Indonesia Merdeka pada", "17 Agustus","2 Mey","28 Oktober","17 Febuari"));
-        modelSementaraList.add(new MusicClass("Waktu Di Indonesia Di bagi menjadi", "Tiga","dua","satu","empat"));
+        modelSementaraList.add(new MusicClass("Sewaktu Anda Terkena Covid Apakah Anda Merasa Cemas", "Sangat Cemas","Cemas","Tidak Peduli","Tidak Sama Sekali"));
+        modelSementaraList.add(new MusicClass("ApaKah Anda Lakukan Jika Tetangga Anda Positiv Covid","Marah","Pindah Tempat Tinggal","Jaga Jarak","Membantu"));
+        modelSementaraList.add(new MusicClass("Apakah Anda Merasa Cemas Jika Merasa Kurang Sehat", "Memeriksakan Diri","Cemas (Mungkin saya covid)","Tidak Peduli","Memakai Masker"));
+        modelSementaraList.add(new MusicClass("Apakah Anda Sering Menggunakan Masker", "Selalu","Kadang lupa","Tidak Pernah","Tidak Punya Masker"));
 
         modelSementaraList.add(new MusicClass("Covid adalah", "bakteri","zat","unsur","virus"));
-        modelSementaraList.add(new MusicClass("Ibu Kota indonesia adalah","Bali","Bandung","Ambon","Jakarta"));
-        modelSementaraList.add(new MusicClass("Beda waktu WIB dan WIT adalah", "5","7","10","2"));
-        modelSementaraList.add(new MusicClass("Matahari Terbit dari", "Tengah","Selatan","kiri","timur"));
+        modelSementaraList.add(new MusicClass("Apakah Anda Rajin Mencuci Tangan Akhir Akhir Ini","Ya","Setiap Satu Jam","Kadang","Tidak Pernah"));
+        modelSementaraList.add(new MusicClass("Apakah Anda Membawa Handsanitizer Setiap Bepergian", "Ya","Kadang","Meminta Punya Orang","Tidak Pernah"));
+        modelSementaraList.add(new MusicClass("Apakah Ada Orang Terdekatmu Yang Positiv Covid", "Ya Beberapa","Ya Tapi Berbeda Daerah Dengan Saya","Ada Serumah Dengan Saya","Tidak Ada"));
 
 
         userAdapterGame= new UserAdapterGame(getActivity(),modelSementaraList);
