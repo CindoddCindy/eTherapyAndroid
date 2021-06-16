@@ -68,24 +68,156 @@
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:orientation="vertical">
-                  <TextView
+                  <LinearLayout
+                      android:padding="2dp"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="80%"
-                      android:layout_gravity="center"
-                      android:gravity="center"
-                      android:textSize="15dp"
-                      android:textStyle="normal"
-                      android:textColor="#000">
+                      android:orientation="horizontal">
 
-                  </TextView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
 
-                  <ImageView
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:padding="2dp"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:src="@drawable/ic_baseline_thumb_up_alt_24">
+                      android:orientation="horizontal">
 
-                  </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:padding="2dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <ImageView
+                          android:layout_weight="1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_star_rate_24">
+
+                      </ImageView>
+
+
+                  </LinearLayout>
+
+
               </LinearLayout>
           </androidx.cardview.widget.CardView>
 
@@ -101,9 +233,58 @@
                   android:layout_height="wrap_content"
                   android:orientation="vertical">
                   <TextView
+                      android:padding="3dp"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="20%"
+                      android:text="85"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textSize="15dp"
+                      android:textStyle="normal"
+                      android:textColor="#000">
+
+                  </TextView>
+                  <TextView
+                      android:padding="3dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="60"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textSize="15dp"
+                      android:textStyle="normal"
+                      android:textColor="#000">
+
+                  </TextView>
+                  <TextView
+                      android:padding="3dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="10"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textSize="15dp"
+                      android:textStyle="normal"
+                      android:textColor="#000">
+
+                  </TextView>
+                  <TextView
+                      android:padding="3dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="2"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textSize="15dp"
+                      android:textStyle="normal"
+                      android:textColor="#000">
+
+                  </TextView>
+                  <TextView
+                      android:padding="3dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="2"
                       android:layout_gravity="center"
                       android:gravity="center"
                       android:textSize="15dp"
@@ -112,12 +293,8 @@
 
                   </TextView>
 
-                  <ImageView
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:src="@drawable/ic_baseline_thumb_down_alt_24">
 
-                  </ImageView>
+
               </LinearLayout>
           </androidx.cardview.widget.CardView>
 
@@ -186,24 +363,158 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <TextView
+
+                    <LinearLayout
+                        android:padding="2dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="85%"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textSize="15dp"
-                        android:textStyle="normal"
-                        android:textColor="#000">
+                        android:orientation="horizontal">
 
-                    </TextView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
 
-                    <ImageView
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="2dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_thumb_up_alt_24">
+                        android:orientation="horizontal">
 
-                    </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_star_rate_24">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -219,9 +530,58 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <TextView
+                        android:padding="3dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="15%"
+                        android:text="80"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:textColor="#000">
+
+                    </TextView>
+                    <TextView
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:textColor="#000">
+
+                    </TextView>
+                    <TextView
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:textColor="#000">
+
+                    </TextView>
+                    <TextView
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:textColor="#000">
+
+                    </TextView>
+                    <TextView
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2"
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:textSize="15dp"
@@ -230,12 +590,7 @@
 
                     </TextView>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_thumb_down_alt_24">
 
-                    </ImageView>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -300,24 +655,154 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <TextView
+                <LinearLayout
+                    android:padding="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="88%"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="15dp"
-                    android:textStyle="normal"
-                    android:textColor="#000">
+                    android:orientation="horizontal">
 
-                </TextView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
 
-                <ImageView
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_thumb_up_alt_24">
+                    android:orientation="horizontal">
 
-                </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -333,9 +818,58 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="12%"
+                    android:text="88"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#000">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="70"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#000">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#000">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#000">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textSize="15dp"
@@ -344,12 +878,7 @@
 
                 </TextView>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_thumb_down_alt_24">
 
-                </ImageView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -413,24 +942,155 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <TextView
+                <LinearLayout
+                    android:padding="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="70%"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="15dp"
-                    android:textStyle="normal"
-                    android:textColor="#000">
+                    android:orientation="horizontal">
 
-                </TextView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
 
-                <ImageView
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_thumb_up_alt_24">
+                    android:orientation="horizontal">
 
-                </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_star_rate_24">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -446,9 +1106,58 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="30%"
+                    android:text="73"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#000">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="70"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#000">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#000">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#000">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textSize="15dp"
@@ -457,12 +1166,7 @@
 
                 </TextView>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_thumb_down_alt_24">
 
-                </ImageView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
