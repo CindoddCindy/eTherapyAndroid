@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.VidioMuslim">
+
+    <VideoView
+        android:layout_margin="5dp"
+        android:id="@+id/video_ms"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <Button
+
+        android:layout_gravity="center"
+        android:id="@+id/play_ms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Play Video" />
+
+    <ScrollView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ayat_satu_ms"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:textColor="#000">
+
+            </TextView>
+
+            <TextView
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ayat_dua_ms"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:textColor="#000">
+
+            </TextView>
+            <TextView
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ayat_tiga_ms"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:textColor="#000">
+
+            </TextView>
+            <TextView
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ayat_empat_ms"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:textColor="#000">
+
+            </TextView>
+            <TextView
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ayat_lima_ms"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:textColor="#000">
+
+            </TextView>
+
+            <TextView
+
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate This"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:textColor="#8F0404">
+
+            </TextView>
+
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.AppCompatRatingBar>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

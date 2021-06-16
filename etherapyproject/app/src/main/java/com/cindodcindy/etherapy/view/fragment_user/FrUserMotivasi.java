@@ -13,6 +13,8 @@ import android.widget.Button;
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.view.UserKristenMotivasi;
 import com.cindodcindy.etherapy.view.UserMuslimMotivasi;
+import com.cindodcindy.etherapy.view.VidioKristen;
+import com.cindodcindy.etherapy.view.VidioMuslim;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -75,7 +77,7 @@ public class FrUserMotivasi extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getActivity(), UserMuslimMotivasi.class);
+                Intent intent = new Intent(getActivity(), VidioMuslim.class);
                 startActivity(intent);
 
             }
@@ -85,7 +87,7 @@ public class FrUserMotivasi extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getActivity(), UserKristenMotivasi.class);
+                Intent intent = new Intent(getActivity(), VidioKristen.class);
                 startActivity(intent);
 
 

@@ -17,4 +17,28 @@
     <string name="game_answer">Game Answer From User</string>
     <string name="game_keterangan">Data User Jawab Quiz Dalam Sehari</string>
 
+
+    <string name="ayat_satu_kr">Yesaya 38: 16-17
+Ya Tuhan, karena inilah hatiku mengharapkan Engkau; tenangkanlah rohku, buatlah aku sehat, buatlah aku sembuh! Sesungguhnya, penderitaan yang pahit menjadi keselamatan bagiku; Engkaulah yang mencegah jiwaku dari lobang kebinasaan. Sebab Engkau telah melemparkan segala dosaku jauh dari hadapan-Mu.</string>
+    <string name="ayat_dua_kr">Filipi 4: 6-7
+Janganlah hendaknya kamu kuatir tentang apapun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur. Damai sejahtera Allah, yang melampaui segala akal, akan memelihara hati dan pikiranmu dalam Kristus Yesus.
+</string>
+    <string name="ayat_tiga_kr">2 Timothy 1: 7
+Sebab Allah memberikan kepada kita bukan roh ketakutan, melainkan roh yang membangkitkan kekuatan, kasih dan ketertiban.
+</string>
+    <string name="ayat_empat_kr">Yeremia 30:17 => Sebab Aku akan mendatangkan kesembuhan bagimu, Aku akan mengobati luka-lukamu, demikianlah firman Tuhan, sebab mereka telah menyebutkan engkau: orang buangan, yakni sisa yang tiada seorangpun menanyakannya.”</string>
+    <string name="ayat_lima_kr"> TUHAN adalah kekuatan umat-Nya dan benteng keselamatan bagi orang yang diurapi-Nya!</string>
+
+
+
+    <string name="ayat_satu_ms">Dia-lah yang telah menurunkan ketenangan ke dalam hati orang-orang mukmin supaya keimanan mereka bertambah di samping keimanan mereka (yang telah ada). Dan kepunyaan Allah-lah tentara langit dan bumi dan adalah Allah Maha Mengetahui lagi Maha Bijaksana.” (QS. Al Fath : </string>
+    <string name="ayat_dua_ms">Surat Ali Imran ayat 139 => Janganlah kamu bersikap lemah dan janganlah pula kamu bersedih hati, padahal kamulah orang orang yang paling tinggi derajatnya jika kamu beriman.
+</string>
+    <string name="ayat_tiga_ms">Surat At-Taubah ayat 40 => Janganlah kamu berduka cita, sesungguhnya Allah selalu bersama kita.</string>
+    <string name="ayat_empat_ms">Surat Ali Imran ayat 139
+“Janganlah kamu bersikap lemah dan janganlah pula kamu bersedih hati, padahal kamulah orang orang yang paling tinggi derajatnya jika kamu beriman."</string>
+    <string name="ayat_lima_ms">Dan barang -siapa yang bertakwa kepada Allah, niscaya Allah menjadikan baginya kemudahan dalam urusannya.” – (Q.S At-Talaq: 4)</string>
+
+
+
 </resources>

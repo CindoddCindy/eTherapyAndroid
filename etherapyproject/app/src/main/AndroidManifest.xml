@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/e_terapy_asset"
         android:supportsRtl="true"
         android:theme="@style/Theme.Etherapy">
-        <activity android:name=".view.LupaPasswordUser"></activity>
+        <activity android:name=".view.VidioMuslim"></activity>
+        <activity android:name=".view.VidioKristen" />
+        <activity android:name=".view.LupaPasswordUser" />
         <activity android:name=".view.LupaPasswordAdmin" />
         <activity android:name=".view.UserVidioMuslim" />
         <activity android:name=".view.UserVidioKristen" />
