@@ -73,6 +73,9 @@ public class LoginAdmin extends AppCompatActivity {
         String email= editText_email.getText().toString();
         String password=editText_password.getText().toString();
 
+        nama=sharedPrefHandle.getSPNama();
+
+
         if (nama=="febyriwindi09@gmail.com") {
 
             Toast.makeText(getApplicationContext(), "BERHASIL LOGIN", Toast.LENGTH_SHORT).show();
