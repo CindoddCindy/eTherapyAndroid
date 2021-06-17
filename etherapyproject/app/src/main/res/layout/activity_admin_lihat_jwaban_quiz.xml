@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".view.seerate.AdminLihatJwabanQuiz">
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="User Jawaban Quiz"
-        android:textStyle="bold"
-        android:textColor="#000">
+        android:orientation="vertical">
 
-    </TextView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/ad_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="2">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_admin_lihat_quiz"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp">
 
-    </androidx.recyclerview.widget.RecyclerView>
 
-</LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_admin_lihat_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.AppCompatRatingBar>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
