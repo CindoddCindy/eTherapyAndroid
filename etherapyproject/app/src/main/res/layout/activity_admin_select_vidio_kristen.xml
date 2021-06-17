@@ -55,18 +55,6 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv_btn_ke_laporan_kristen"
-        android:gravity="center"
-        android:textSize="15dp"
-        android:textColor="#F3EDED"
-        android:text="Motivasi Kristen Laporan"
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#514E4E">
-
-    </TextView>
 
 
     <!--Image View for showing image choosen from gallery-->

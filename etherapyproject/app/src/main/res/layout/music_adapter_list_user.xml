@@ -78,6 +78,7 @@
 
                             <TextView
                                 android:id="@+id/tv_user_music_title"
+                                android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
                                 android:layout_marginRight="5dp"
                                 android:layout_marginLeft="5dp"
                                 android:layout_width="match_parent"
@@ -93,35 +94,7 @@
 
                             </TextView>
 
-                            <TextView
-                                android:layout_marginRight="5dp"
-                                android:layout_marginLeft="5dp"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textColor="#3B3D47"
-                                android:textSize="12dp"
-                                android:textStyle="bold"
-                                android:text="Duration"
-                                android:layout_gravity="center"
-                                android:gravity="left"
-                                android:padding="3dp">
 
-                            </TextView>
-                            <TextView
-
-                                android:layout_marginRight="5dp"
-                                android:layout_marginLeft="5dp"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textColor="#3B3C3C"
-                                android:textSize="12dp"
-                                android:textStyle="bold"
-                                android:text="Tanggal"
-                                android:layout_gravity="center"
-                                android:gravity="left"
-                                android:padding="3dp">
-
-                            </TextView>
 
 
 
@@ -161,14 +134,7 @@
 
 
         </LinearLayout>
-            <androidx.appcompat.widget.AppCompatRatingBar
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center"
-                android:numStars="5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
 
-            </androidx.appcompat.widget.AppCompatRatingBar>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

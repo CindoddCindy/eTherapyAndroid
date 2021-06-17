@@ -87,16 +87,7 @@ public class FrUserMusic extends Fragment {
 
 
         modelSementaraList = new ArrayList<>();
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
-        modelSementaraList.add(new MusicClass("Music Title"));
+        modelSementaraList.add(new MusicClass(" Go To Play Music"));
 
         userAdapterMusic= new UserAdapterMusic(getActivity(),modelSementaraList);
         recyclerView.setAdapter(userAdapterMusic);

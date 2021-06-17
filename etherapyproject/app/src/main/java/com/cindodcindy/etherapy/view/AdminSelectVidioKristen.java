@@ -26,7 +26,6 @@ public class AdminSelectVidioKristen extends AppCompatActivity {
     // views for button
     private Button btnSelect, btnUpload;
 
-    private TextView textView_btn_lihat_laporan;
 
     // view for image view
     private ImageView imageView;
@@ -57,15 +56,8 @@ public class AdminSelectVidioKristen extends AppCompatActivity {
         btnUpload = findViewById(R.id.btnUploadAdmin);
         imageView = findViewById(R.id.imgViewAdmin);
 
-        textView_btn_lihat_laporan=findViewById(R.id.tv_btn_ke_laporan_kristen);
 
-        textView_btn_lihat_laporan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AdminSelectVidioKristen.this, KristenLaporan.class);
-                startActivity(intent);
-            }
-        });
+
 
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
