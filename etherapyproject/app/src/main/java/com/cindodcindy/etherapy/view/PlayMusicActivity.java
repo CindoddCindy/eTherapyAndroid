@@ -17,8 +17,8 @@ import java.io.IOException;
 public class PlayMusicActivity extends AppCompatActivity {
 
     MediaPlayer bed, forever, listen, love, sleeping;
-    String [] lagu = {"Daftar Lagu","Bed of Roses", "Forever & One",
-            "Listen To Your Heart","Love of My Life", "Sleeping Child"};
+    String [] lagu = {"Select Music","Music First", "Music Second",
+            "Music Third","Music Fourth", "Music Fifth"};
     int urutanDiPilih;
 
     @Override

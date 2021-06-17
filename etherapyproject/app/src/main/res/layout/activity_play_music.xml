@@ -44,11 +44,10 @@
                 android:gravity="center">
 
                 <Spinner
-                    android:background="@drawable/ic_baseline_music_note_24"
                     android:layout_margin="10dp"
                     android:id="@+id/spinnerLagu"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
                     />
 
 

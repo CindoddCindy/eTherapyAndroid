@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.cindodcindy.etherapy.R;
 import com.cindodcindy.etherapy.view.MusicLaporan;
+import com.cindodcindy.etherapy.view.PlayMusicActivity;
 import com.cindodcindy.etherapy.view.ShowListMpTri;
 import com.cindodcindy.etherapy.view.seerate.AdminLihatRateMusic;
 
@@ -101,7 +102,7 @@ public class FrAdminUploadMusic extends Fragment {
         textView_admin_lihat_music_rate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),AdminLihatRateMusic.class);
+                Intent intent = new Intent(getActivity(), PlayMusicActivity.class);
                 startActivity(intent);
             }
         });
