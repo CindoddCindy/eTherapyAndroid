@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 import com.cindodcindy.etherapy.R;
 
@@ -13,126 +16,92 @@ import java.io.IOException;
 
 public class PlayMusicActivity extends AppCompatActivity {
 
-    MediaPlayer mp;
-
-    private Button button_play, button_pause, button_stop;
-
-
+    MediaPlayer bed, forever, listen, love, sleeping;
+    String [] lagu = {"Daftar Lagu","Bed of Roses", "Forever & One",
+            "Listen To Your Heart","Love of My Life", "Sleeping Child"};
+    int urutanDiPilih;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_music);
 
-        mp=MediaPlayer.create(this, R.raw.file_example_);
-        mp=MediaPlayer.create(this, R.raw.music_satu);
-        mp=MediaPlayer.create(this, R.raw.music_dua);
-        mp=MediaPlayer.create(this, R.raw.music_tiga);
-        mp=MediaPlayer.create(this, R.raw.music_empat);
-        mp=MediaPlayer.create(this, R.raw.music_lima);
 
+        bed = MediaPlayer.create(this, R.raw.music_a);
+        forever = MediaPlayer.create(this, R.raw.music_b);
+        listen = MediaPlayer.create(this, R.raw.music_c);
+        love = MediaPlayer.create(this, R.raw.music_d);
+        sleeping = MediaPlayer.create(this, R.raw.music_e);
 
-        button_play=findViewById(R.id.btnPlay);
+        Spinner spinLagu = findViewById(R.id.spinnerLagu);
+        ArrayAdapter ada = new ArrayAdapter<>(this,
+                android.R.layout.simple_spinner_dropdown_item, lagu);
+        spinLagu.setDropDownWidth(350);
+        spinLagu.setAdapter(ada);
 
-        button_pause=findViewById(R.id.btnPause);
+        spinLagu.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int urutan, long id) {
+                urutanDiPilih = urutan;
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
 
-        button_stop=findViewById(R.id.btnStop);
-
-        stateAwal();
-
-        button_play.setOnClickListener(new View.OnClickListener() {
+        Button play = findViewById(R.id.btnPlay);
+        play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                play();
-                button_play.setEnabled(false);
-                button_pause.setEnabled(true);
-                button_stop.setEnabled(true);
-                //mp.start();
-
+                switch (urutanDiPilih) {
+                    case 1 :
+                        bed.start();
+                        break;
+                    case 2 :
+                        forever.start();
+                        break;
+                    case 3 :
+                        listen.start();
+                        break;
+                    case 4 :
+                        love.start();
+                        break;
+                    case 5 :
+                        sleeping.start();
+                        break;
+                }
             }
         });
-
-        button_pause.setOnClickListener(new View.OnClickListener() {
+        Button stop = findViewById(R.id.btnStop);
+        stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // mp.pause();
-                pause();
-
+                switch (urutanDiPilih) {
+                    case 1 :
+                        bed.pause();
+                        bed.seekTo(0);
+                        break;
+                    case 2 :
+                        forever.pause();
+                        forever.seekTo(0);
+                        break;
+                    case 3 :
+                        listen.pause();
+                        listen.seekTo(0);
+                        break;
+                    case 4 :
+                        love.pause();
+                        love.seekTo(0);
+                        break;
+                    case 5 :
+                        sleeping.pause();
+                        sleeping.seekTo(0);
+                        break;
+                }
             }
         });
 
-        button_stop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                stop();
-               // mp.stop();
-               // mp=MediaPlayer.create(this, R.raw.file_example_);
+           }
 
-            }
-        });
-    }
-
-
-    /** State Awal / Pertama Dijalankan */
-    public void stateAwal(){
-        button_play.setEnabled(true);
-        button_pause.setEnabled(false);
-        button_stop.setEnabled(false);
-    }
-
-    /** Dijalankan Oleh Tombol Play */
-    private void play() {
-        /** Memanggil File MP3 "indonesiaraya.mp3" */
-        mp = MediaPlayer.create(this, R.raw.file_example_);
-
-        try {
-            mp.prepare();
-        } catch (IllegalStateException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        /** Menjalankan Audio */
-        mp.start();
-
-        /** Penanganan Ketika Suara Berakhir */
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                stateAwal();
-            }
-        });
-    }
-
-    /** Dijalankan Oleh Tombol Pause */
-    public void pause(){
-        if(mp.isPlaying()){
-            if(mp!=null){
-                mp.pause();
-
-            }
-        } else {
-            if(mp!=null){
-                mp.start();
-
-            }
-        }
-    }
-
-    /** Dijalankan Oleh Tombol Stop */
-    public void stop(){
-        mp.stop();
-
-        try{
-            mp.prepare();
-            mp.seekTo(0);
-        }catch (Throwable t) {
-            t.printStackTrace();
-        }
-
-        stateAwal();
-    }
 
 }
