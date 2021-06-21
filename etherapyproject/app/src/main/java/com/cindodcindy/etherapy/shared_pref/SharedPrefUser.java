@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SharedPrefUser {
-    public static final String SP_ETHERAPYUSER_APP = "spETherapyAdmin";
+    public static final String SP_ETHERAPYUSER_APP = "spETherapyUser";
 
     public static final String SP_NAMA = "spNama";
     public static final String SP_EMAIL = "spEmail";

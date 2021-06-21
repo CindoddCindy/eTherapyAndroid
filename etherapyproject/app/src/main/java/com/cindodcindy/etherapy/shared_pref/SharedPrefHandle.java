@@ -8,8 +8,9 @@ public class SharedPrefHandle {
     public static final String SP_ETHERAPYADMIN_APP = "spETherapyAdmin";
 
     public static final String SP_NAMA = "spNama";
-    public static final String SP_EMAIL = "spEmail";
+    public static final String SP_EMAIL = "febyriwindi09@gmail.com";
     public static final String SP_PASSWORD="spPassword";
+
 
     public static final String SP_SUDAH_LOGIN = "spSudahLogin";
 
@@ -32,6 +33,7 @@ public class SharedPrefHandle {
     }
 
     public void setSpEmail(String keySp, String value){
+
         spEditor.putString(keySp,value);
         spEditor.commit();
     }

@@ -31,6 +31,8 @@ public class LoginAdmin extends AppCompatActivity {
 
         editText_nama=findViewById(R.id.et_admin_nama);
         editText_email=findViewById(R.id.et_admin_email);
+        editText_password=findViewById(R.id.et_admin_password);
+
         textView_lupa_password=findViewById(R.id.tv_admin_lupa_password);
 
         textView_lupa_password.setOnClickListener(new View.OnClickListener() {
@@ -73,13 +75,21 @@ public class LoginAdmin extends AppCompatActivity {
         String email= editText_email.getText().toString();
         String password=editText_password.getText().toString();
 
-        nama=sharedPrefHandle.getSPNama();
 
 
-        if (nama=="febyriwindi09@gmail.com") {
+
+
+
+       // email=sharedPrefHandle.getSPEmail();
+
+
+        if (editText_email.getText().toString().equals("Febyriwindi09@gmail.com")) {
+
+          //  email=sharedPrefHandle.getSPEmail();
 
             Toast.makeText(getApplicationContext(), "BERHASIL LOGIN", Toast.LENGTH_SHORT).show();
             sharedPrefHandle.setSpNama(SharedPrefHandle.SP_NAMA, nama);
+
             sharedPrefHandle.setSpEmail(SharedPrefHandle.SP_EMAIL, email);
             sharedPrefHandle.setSpPassword(SharedPrefHandle.SP_PASSWORD, password);
             // Shared Pref ini berfungsi untuk menjadi trigger session login
@@ -87,6 +97,8 @@ public class LoginAdmin extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), BottomNavAdmin.class)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
             finish();
+
+
         }
 
         else {
