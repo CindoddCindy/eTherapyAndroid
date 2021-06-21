@@ -79,14 +79,24 @@ public class LoginUser extends AppCompatActivity {
         String email= editText_email.getText().toString();
         String password=editText_password.getText().toString();
 
-        Toast.makeText(getApplicationContext(), "BERHASIL LOGIN", Toast.LENGTH_SHORT).show();
-        sharedPrefUser.setSpNama(SharedPrefHandle.SP_NAMA, nama);
-        sharedPrefUser.setSpEmail(SharedPrefHandle.SP_EMAIL,email);
-        sharedPrefUser.setSpPassword(SharedPrefHandle.SP_PASSWORD,password);
-        // Shared Pref ini berfungsi untuk menjadi trigger session login
-        sharedPrefUser.saveSPBoolean(SharedPrefHandle.SP_SUDAH_LOGIN, true);
-        startActivity(new Intent(getApplicationContext(), BottomNavUser.class)
-                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
-        finish();
+
+        if(editText_email.getText().toString().equals("Febyriwindi09@gmail.com")) {
+
+            Toast.makeText(getApplicationContext(), "BERHASIL LOGIN", Toast.LENGTH_SHORT).show();
+            sharedPrefUser.setSpNama(SharedPrefHandle.SP_NAMA, nama);
+            sharedPrefUser.setSpEmail(SharedPrefHandle.SP_EMAIL, email);
+            sharedPrefUser.setSpPassword(SharedPrefHandle.SP_PASSWORD, password);
+            // Shared Pref ini berfungsi untuk menjadi trigger session login
+            sharedPrefUser.saveSPBoolean(SharedPrefHandle.SP_SUDAH_LOGIN, true);
+            startActivity(new Intent(getApplicationContext(), BottomNavUser.class)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+            finish();
+
+        }
+        else {
+            Toast.makeText(getApplicationContext(), "Email Tidak Cocok", Toast.LENGTH_SHORT).show();
+
+        }
+
     }
 }
