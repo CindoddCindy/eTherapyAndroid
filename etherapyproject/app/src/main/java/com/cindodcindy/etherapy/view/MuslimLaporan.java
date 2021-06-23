@@ -56,16 +56,11 @@ public class MuslimLaporan extends AppCompatActivity {
 
     private List<Entry> getDataSet() {
         List<Entry> lineEntries = new ArrayList<Entry>();
-        lineEntries.add(new Entry(1, 10));
-        lineEntries.add(new Entry(2, 10));
-        lineEntries.add(new Entry(3, 10));
-        lineEntries.add(new Entry(4, 10));
+        lineEntries.add(new Entry(1, 2));
+        lineEntries.add(new Entry(2, 5));
+        lineEntries.add(new Entry(3, 17));
+        lineEntries.add(new Entry(4, 20));
         lineEntries.add(new Entry(5, 23));
-        lineEntries.add(new Entry(6, 23));
-        lineEntries.add(new Entry(7, 20));
-        lineEntries.add(new Entry(8, 26));
-        lineEntries.add(new Entry(9, 33));
-        lineEntries.add(new Entry(10, 28));
 
 
         return lineEntries;

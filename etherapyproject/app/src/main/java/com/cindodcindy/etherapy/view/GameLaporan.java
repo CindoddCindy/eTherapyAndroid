@@ -56,9 +56,7 @@ public class GameLaporan extends AppCompatActivity {
     private List<Entry> getDataSet() {
         List<Entry> lineEntries = new ArrayList<Entry>();
         lineEntries.add(new Entry(1, 10));
-        lineEntries.add(new Entry(2, 10));
-        lineEntries.add(new Entry(3, 16));
-        lineEntries.add(new Entry(4, 23));
+        lineEntries.add(new Entry(2, 8));
 
         return lineEntries;
     }
