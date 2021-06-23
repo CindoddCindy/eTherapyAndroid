@@ -68,10 +68,10 @@ public class MusicLaporan extends AppCompatActivity {
     private List<Entry> getDataSet() {
         List<Entry> lineEntries = new ArrayList<Entry>();
         lineEntries.add(new Entry(1, 2));
-        lineEntries.add(new Entry(2, 4));
-        lineEntries.add(new Entry(3, 16));
-        lineEntries.add(new Entry(4, 23));
-        lineEntries.add(new Entry(5, 25));
+        lineEntries.add(new Entry(2, 2));
+        lineEntries.add(new Entry(3, 10));
+        lineEntries.add(new Entry(4, 60));
+        lineEntries.add(new Entry(5, 85));
 
 
         return lineEntries;

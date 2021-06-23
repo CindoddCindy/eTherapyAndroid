@@ -56,11 +56,11 @@ public class KristenLaporan extends AppCompatActivity {
 
     private List<Entry> getDataSet() {
         List<Entry> lineEntries = new ArrayList<Entry>();
-        lineEntries.add(new Entry(1, 3));
-        lineEntries.add(new Entry(2, 5));
-        lineEntries.add(new Entry(3, 7));
-        lineEntries.add(new Entry(4, 15));
-        lineEntries.add(new Entry(5, 20));
+        lineEntries.add(new Entry(1, 2));
+        lineEntries.add(new Entry(2, 2));
+        lineEntries.add(new Entry(3, 10));
+        lineEntries.add(new Entry(4, 20));
+        lineEntries.add(new Entry(5, 80));
 
 
         return lineEntries;
