@@ -40,7 +40,7 @@ public class MusicLaporan extends AppCompatActivity {
     private void drawLineChart() {
         LineChart lineChart = findViewById(R.id.lineChart);
         List<Entry> lineEntries = getDataSet();
-        LineDataSet lineDataSet = new LineDataSet(lineEntries, getString(R.string.oil_price));
+        LineDataSet lineDataSet = new LineDataSet(lineEntries, getString(R.string.price_in_last_12_days));
         lineDataSet.setAxisDependency(YAxis.AxisDependency.LEFT);
         lineDataSet.setHighlightEnabled(true);
         lineDataSet.setLineWidth(2);
@@ -54,7 +54,7 @@ public class MusicLaporan extends AppCompatActivity {
         lineDataSet.setValueTextColor(Color.DKGRAY);
 
         LineData lineData = new LineData(lineDataSet);
-        lineChart.getDescription().setText(getString(R.string.price_in_last_12_days));
+        lineChart.getDescription().setText(getString(R.string.oil_price));
         lineChart.getDescription().setTextSize(12);
         lineChart.setDrawMarkers(true);
         lineChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTH_SIDED);
